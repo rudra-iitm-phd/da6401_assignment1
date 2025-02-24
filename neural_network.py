@@ -10,9 +10,6 @@ class NeuralNetwork:
     self.input_size = input_size
     self.output_size = output_size
     self.total_params = 0
-
-    
-
     self.activation_functions = ActivationFunctions()
 
     self.activations = {f'{activation}{i}' : self.activation_functions.get(activation) for (i,activation) in enumerate(activation_list + [output_fn])}
