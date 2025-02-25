@@ -16,7 +16,7 @@ class NeuralNetwork:
 
     self.hidden = self.generate_hidden_layers() 
 
-    self.params = self.init_params(self.hidden)
+    self.params = self.hidden
     
   def generate_hidden_layers(self) -> dict:
     layers = dict()
@@ -35,26 +35,27 @@ class NeuralNetwork:
 
     return layers
 
-  def init_params(self, hidden):
-    k = 0
-    start = np.random.normal(size = (self.input_size,1))
-    prev_block = None
-    for block in list(hidden.keys()):
-      if k == 0:
-        hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], start) + hidden[block]['b'])
+  # def init_params(self, hidden):
+  #   k = 0
+  #   start = np.random.normal(size = (self.input_size,1))
+  #   prev_block = None
+  #   for block in list(hidden.keys()):
+  #     if k == 0:
+  #       hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], start) + hidden[block]['b'])
         
-      else:
-        hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], hidden[prev_block]['o'] ) + hidden[block]['b'])
+  #     else:
+  #       hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], hidden[prev_block]['o'] ) + hidden[block]['b'])
 
-      prev_block = block
-      k += 1
-    return hidden
+  #     prev_block = block
+  #     k += 1
+  #   return hidden
 
-  def get_logits(self, x:np.ndarray):
+  def forward(self, x:np.ndarray):
     assert x.shape == (self.input_size, 1) 
     k = 0
     logits = None
     prev_block = None
+    self.params['hidden0']['x'] = x
     for block in list(self.params.keys()):
       if k == 0:
         self.params[block]['o'] = self.params[block]['h'](np.matmul(self.params[block]['w'], x) + self.params[block]['b'])
@@ -67,8 +68,10 @@ class NeuralNetwork:
       k += 1
       prev_block = block
 
+    return self.params, logits
 
-    return logits
+  def infer(self, x:np.ndarray):
+    return self.forward(x)[1]
 
   
   def view_model_summary(self):
