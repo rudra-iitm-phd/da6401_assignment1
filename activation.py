@@ -16,13 +16,15 @@ class ActivationFunctions:
       return self.softmax
 
   def relu(self, x):
-    return max(0, x)
+    return np.max(0, x)
 
   def sigmoid(self, x):
+    x = x - np.max(x)
     return 1/(1 + np.exp(-x))
 
   def tanh(self, x):
     return (np.exp(x) - np.exp(-x))/(np.exp(x) + np.exp(-x))
 
   def softmax(self, x):
+    x = x - np.max(x)
     return np.exp(x)/sum(np.exp(x))

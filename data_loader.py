@@ -57,7 +57,7 @@ class Data:
 
       if self.y_train[k] in pop_list: # if this number is in the list we plot it and then pop it out
 
-        ax[i, j].imshow(self.X_train[k], cmap = 'grey')
+        ax[i, j].imshow(self.X_train[k], cmap = 'gray')
         ax[i, j].set_title(f'{self.classes[self.y_train[k]]}')
 
         pop_list.pop(pop_list.index(self.y_train[k]))

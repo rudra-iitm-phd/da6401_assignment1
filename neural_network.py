@@ -18,18 +18,19 @@ class NeuralNetwork:
 
     self.params = self.hidden
     
+    
   def generate_hidden_layers(self) -> dict:
     layers = dict()
     for i,j in enumerate(range(self.n_hidden)):
       if i == 0:
-        layers[f'hidden{i}'] = { 'w': np.random.normal(size = (self.width_of_layers[i], self.input_size)), 'b': np.random.normal(size = (self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]}
+        layers[f'hidden{i}'] = { 'w': np.random.normal(size = (self.width_of_layers[i], self.input_size)), 'b': np.ones((self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]}
 
       else:
-        layers[f'hidden{i}'] = {'w' : np.random.normal(size = (self.width_of_layers[i], self.width_of_layers[i-1])), 'b': np.random.normal(size = (self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]  }
+        layers[f'hidden{i}'] = {'w' : np.random.normal(size = (self.width_of_layers[i], self.width_of_layers[i-1])), 'b': np.ones((self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]  }
 
       self.total_params += layers[f'hidden{i}']['w'].shape[0] * layers[f'hidden{i}']['w'].shape[1] + layers[f'hidden{i}']['b'].shape[0]
 
-    layers[f'output{self.n_hidden}'] = {'w' : np.random.normal( size = (self.output_size, self.width_of_layers[-1])), 'b': np.random.normal(size = (self.output_size , 1)), 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
+    layers[f'output{self.n_hidden}'] = {'w' : np.random.normal( size = (self.output_size, self.width_of_layers[-1])), 'b': np.ones((self.output_size , 1)), 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
 
     self.total_params += layers[f'output{self.n_hidden}']['w'].shape[0] * layers[f'output{self.n_hidden}']['w'].shape[1] + layers[f'output{self.n_hidden}']['b'].shape[0]
 
@@ -49,19 +50,22 @@ class NeuralNetwork:
   #     prev_block = block
   #     k += 1
   #   return hidden
+  def unit_normalisation(self, x):
+    return (x - np.min(x))/(np.max(x) - np.min(x))
 
   def forward(self, x:np.ndarray):
-    assert x.shape == (self.input_size, 1) 
+    assert x.shape[0] == self.input_size
+    x = self.unit_normalisation(x)
     k = 0
     logits = None
     prev_block = None
     self.params['hidden0']['x'] = x
     for block in list(self.params.keys()):
       if k == 0:
-        self.params[block]['o'] = self.params[block]['h'](np.matmul(self.params[block]['w'], x) + self.params[block]['b'])
-        
+        self.params[block]['a'] = np.matmul(self.params[block]['w'], x) + self.params[block]['b']  
       else:
-        self.params[block]['o'] = self.params[block]['h'](np.matmul(self.params[block]['w'], self.params[prev_block]['o'] ) + self.params[block]['b'])
+        self.params[block]['a'] = np.matmul(self.params[block]['w'], self.params[prev_block]['o'] ) + self.params[block]['b']
+      self.params[block]['o'] = self.params[block]['h'](self.params[block]['a'])
 
       logits = self.params[block]['o']
 
@@ -72,6 +76,9 @@ class NeuralNetwork:
 
   def infer(self, x:np.ndarray):
     return self.forward(x)[1]
+
+  def set_params(self, params:dict):
+    self.params = params
 
   
   def view_model_summary(self):
