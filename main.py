@@ -19,34 +19,40 @@ configuration_script = {
 nn, optim, loss_fn = configuration.configure(configuration_script)
 
 # nn = NeuralNetwork([32, 64, 128, 32], 128, 10, ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid'], 'softmax')
-x = np.random.normal(size = (128, 1))
+
 nn.view_model_summary()
 
-#forward data to network
-nn.params, nn.logits = nn.forward(x)
+
 
 #initialize loss
-loss = loss_fn(nn)
+loss = loss_fn()
 
-for i in range(1000):
+#initialize optimizer
+op = optim(1e-3)
+
+for i in range(5):
       
-      
+      x = np.random.normal(size = (128, 3))
+      #forward data to network
+      nn.params, nn.logits = nn.forward(x)
 
       #compute loss
-      loss.compute(nn.infer(x), np.array([np.random.randint(0,10) for _ in range(1)]))
+      print(round(loss.compute(nn.infer(x), np.array([np.random.randint(0,10) for _ in range(3)])),3))
 
-
+      
       #backpropagate loss
-      grads = loss.backpropagate()
+      grads = loss.backpropagate(nn.params)
 
-      #initialize optimizer
-      op = optim(nn.params, 1e-3)
-
+      
+      
       #update the params
-      updated_params = op.update(grads)
+      updated_params = op.update(nn.params, grads)
 
+      
+      
       #pass the updated params to neural net
       nn.set_params(updated_params)
+      
 
       
 

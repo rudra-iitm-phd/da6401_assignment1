@@ -12,6 +12,7 @@ class Configure:
             self.output_function = 'softmax'
             self.optimizer = None
             self.loss_function = None
+            self.weight_init = None
 
       def show_blueprint(self):
 
@@ -24,6 +25,7 @@ class Configure:
             assert type(script['activation_functions']) == list 
             assert type(script['optimizer']) == str
             assert type(script['loss_function']) == str
+            assert type(script['weight_init']) == str
 
             self.hidden_layers = script['hidden_layers']
             self.input_size = script['input_size']
@@ -32,8 +34,10 @@ class Configure:
             self.output_function = 'softmax'
             self.optimizer = MomentumGradientDescent if script['optimizer'] == 'momentum' else GradientDescent
             self.loss_function = CrossEntropy if script['loss_function'] == 'cross entropy' else None
+            self.weight_init = script['weight_init']
+            
 
-            return NeuralNetwork(self.hidden_layers, self.input_size, self.output_size, self.activation_functions, self.output_function), self.optimizer, self.loss_function
+            return NeuralNetwork(self.hidden_layers, self.input_size, self.output_size, self.activation_functions, self.output_function, self.weight_init), self.optimizer, self.loss_function
 
       
 

@@ -1,9 +1,17 @@
 import numpy as np
 from activation import ActivationFunctions
-
+from normalisation import UnitNormalisation as unit_normalise
+from copy import deepcopy
+from preprocess import PreProcessor as pp
+from weight_init import Xavier, Random
 class NeuralNetwork:
 
-  def __init__(self, width_of_layers:list, input_size:int, output_size:int, activation_list:list, output_fn:str):
+  def __init__(self, width_of_layers:list, input_size:int, output_size:int, activation_list:list, output_fn:str, weight_init:str):
+
+
+    assert weight_init.lower() in ['random', 'xavier']
+
+    
 
     self.n_hidden = len(width_of_layers)
     self.width_of_layers = width_of_layers
@@ -11,74 +19,80 @@ class NeuralNetwork:
     self.output_size = output_size
     self.total_params = 0
     self.activation_functions = ActivationFunctions()
-
     self.activations = {f'{activation}{i}' : self.activation_functions.get(activation) for (i,activation) in enumerate(activation_list + [output_fn])}
+    self.pp = pp()
+    
 
-    self.hidden = self.generate_hidden_layers() 
+    self.weight_init = None
 
+    if weight_init.lower() == 'random':
+      self.weight_init = Random()
+    elif weight_init.lower() == 'xavier':
+      self.weight_init = Xavier(self.input_size, self.output_size)
+
+    self.hidden = self.generate_hidden_layers()
     self.params = self.hidden
+
+    self.unit_normaliser = unit_normalise()
     
     
   def generate_hidden_layers(self) -> dict:
     layers = dict()
     for i,j in enumerate(range(self.n_hidden)):
       if i == 0:
-        layers[f'hidden{i}'] = { 'w': np.random.normal(size = (self.width_of_layers[i], self.input_size)), 'b': np.ones((self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]}
+        layers[f'hidden{i}'] = { 'w': self.weight_init.initialize((self.width_of_layers[i], self.input_size)), 'b': np.random.rand(self.width_of_layers[i], 1), 'h': self.activations[list(self.activations.keys())[i]]}
+        # layers[f'hidden{i}'] = { 'w': np.random.rand(self.width_of_layers[i], self.input_size) - 0.5, 'b': np.random.rand(self.width_of_layers[i], 1), 'h': self.activations[list(self.activations.keys())[i]]}
 
       else:
-        layers[f'hidden{i}'] = {'w' : np.random.normal(size = (self.width_of_layers[i], self.width_of_layers[i-1])), 'b': np.ones((self.width_of_layers[i],1)), 'h': self.activations[list(self.activations.keys())[i]]  }
+        layers[f'hidden{i}'] = {'w' : self.weight_init.initialize((self.width_of_layers[i], self.width_of_layers[i-1])) , 'b': np.random.rand(self.width_of_layers[i], 1)-0.5, 'h': self.activations[list(self.activations.keys())[i]]  }
+        # layers[f'hidden{i}'] = {'w' : np.random.rand(self.width_of_layers[i], self.width_of_layers[i-1]) -0.5, 'b': np.random.rand(self.width_of_layers[i], 1)-0.5, 'h': self.activations[list(self.activations.keys())[i]]  }
 
       self.total_params += layers[f'hidden{i}']['w'].shape[0] * layers[f'hidden{i}']['w'].shape[1] + layers[f'hidden{i}']['b'].shape[0]
+      
+      layers[f'output{self.n_hidden}'] = {'w' : self.weight_init.initialize((self.output_size, self.width_of_layers[-1])) , 'b': np.random.rand(self.output_size , 1)-0.5, 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
 
-    layers[f'output{self.n_hidden}'] = {'w' : np.random.normal( size = (self.output_size, self.width_of_layers[-1])), 'b': np.ones((self.output_size , 1)), 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
+    # layers[f'output{self.n_hidden}'] = {'w' : np.random.rand(self.output_size, self.width_of_layers[-1]) -0.5, 'b': np.random.rand(self.output_size , 1)-0.5, 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
 
     self.total_params += layers[f'output{self.n_hidden}']['w'].shape[0] * layers[f'output{self.n_hidden}']['w'].shape[1] + layers[f'output{self.n_hidden}']['b'].shape[0]
 
     return layers
 
-  # def init_params(self, hidden):
-  #   k = 0
-  #   start = np.random.normal(size = (self.input_size,1))
-  #   prev_block = None
-  #   for block in list(hidden.keys()):
-  #     if k == 0:
-  #       hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], start) + hidden[block]['b'])
-        
-  #     else:
-  #       hidden[block]['o'] = hidden[block]['h'](np.matmul(hidden[block]['w'], hidden[prev_block]['o'] ) + hidden[block]['b'])
-
-  #     prev_block = block
-  #     k += 1
-  #   return hidden
-  def unit_normalisation(self, x):
-    return (x - np.min(x))/(np.max(x) - np.min(x))
 
   def forward(self, x:np.ndarray):
+    x = deepcopy(x)
+    x = self.pp.process(x)
     assert x.shape[0] == self.input_size
-    x = self.unit_normalisation(x)
+    
     k = 0
     logits = None
     prev_block = None
     self.params['hidden0']['x'] = x
     for block in list(self.params.keys()):
       if k == 0:
-        self.params[block]['a'] = np.matmul(self.params[block]['w'], x) + self.params[block]['b']  
+        
+        self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b'] 
+         
       else:
-        self.params[block]['a'] = np.matmul(self.params[block]['w'], self.params[prev_block]['o'] ) + self.params[block]['b']
+        self.params[block]['a'] = self.params[block]['w'].dot(self.params[prev_block]['o']) + self.params[block]['b']
+        
       self.params[block]['o'] = self.params[block]['h'](self.params[block]['a'])
-
-      logits = self.params[block]['o']
-
+      
       k += 1
       prev_block = block
 
+    logits = self.params[prev_block]['o'].copy()
+
     return self.params, logits
 
-  def infer(self, x:np.ndarray):
-    return self.forward(x)[1]
+  def infer(self, x:np.ndarray, logits=True):
+    l = self.forward(x)[1]
+    if logits:
+      return l
+    else:
+      return np.argmax(l, axis = 0)
 
   def set_params(self, params:dict):
-    self.params = params
+    self.params = deepcopy(params)
 
   
   def view_model_summary(self):
