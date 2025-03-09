@@ -1,0 +1,51 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:39: RuntimeWarning: divide by zero encountered in log10
+  self.loss -= np.log10(pred_logits[true_classes[m],m])
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: divide by zero encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: invalid value encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: overflow encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+Loss : 53.72      Train accuracy : 34.47      Validation accuracy : 33.02
+-------------------------------------------------------------------------------------
+Loss : 9.97      Train accuracy : 72.57      Validation accuracy : 70.07
+-------------------------------------------------------------------------------------
+Loss : 7.25      Train accuracy : 73.75      Validation accuracy : 70.72
+-------------------------------------------------------------------------------------
+Loss : 6.89      Train accuracy : 73.45      Validation accuracy : 71.01
+-------------------------------------------------------------------------------------
+Loss : 3.51      Train accuracy : 81.02      Validation accuracy : 77.75
+-------------------------------------------------------------------------------------
+Loss : 4.77      Train accuracy : 76.22      Validation accuracy : 73.68
+-------------------------------------------------------------------------------------
+Loss : 2.87      Train accuracy : 81.13      Validation accuracy : 76.64
+-------------------------------------------------------------------------------------
+Loss : 4.79      Train accuracy : 77.55      Validation accuracy : 72.98
+-------------------------------------------------------------------------------------
+Loss : 2.9      Train accuracy : 83.12      Validation accuracy : 78.3
+-------------------------------------------------------------------------------------
+Loss : 11.42      Train accuracy : 77.6      Validation accuracy : 72.89
+-------------------------------------------------------------------------------------
+Loss : 4.18      Train accuracy : 82.95      Validation accuracy : 78.82
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 48, in learn
+    params, logits = nn.forward(x)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 73, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b']
+KeyboardInterrupt

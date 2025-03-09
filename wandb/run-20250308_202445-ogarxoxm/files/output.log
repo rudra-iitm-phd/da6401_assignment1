@@ -1,0 +1,27 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:39: RuntimeWarning: divide by zero encountered in log10
+  self.loss -= np.log10(pred_logits[true_classes[m],m])
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: divide by zero encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: invalid value encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+Loss : 48.09      Train accuracy : 34.4      Validation accuracy : 33.03
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 64, in learn
+    self.logger.plot.confusion_matrix(y_true = self.y_train, y_pred = nn.infer(self.X_train, False), class_names = list(range(10)))
+TypeError: confusion_matrix() got an unexpected keyword argument 'y_pred'

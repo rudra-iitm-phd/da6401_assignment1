@@ -1,0 +1,8 @@
+Loss : 4.36      Train accuracy : 33.33      Validation accuracy : 33.79
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/train.py", line 37, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=0.1, batch_size=1000, epochs=1000, acc_metrics=accuracy, loss = loss_fn, beta = 0.9, forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 60, in learn
+    self.logger.log(f'Loss : {round(train_loss, 2)}, Train accuracy : {round(train_accuracy, 2)}, Validation accuracy : {round(val_accuracy, 2)}')
+AttributeError: 'function' object has no attribute 'log'

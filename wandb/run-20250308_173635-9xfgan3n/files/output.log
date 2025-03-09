@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/train.py", line 27, in <module>
+    fig = Data.display_collage()
+TypeError: display_collage() missing 2 required positional arguments: 'self' and 'figsize'

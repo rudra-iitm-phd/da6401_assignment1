@@ -1,61 +1,40 @@
 import numpy as np 
-from neural_network import NeuralNetwork
-from optimizer import Optimizer, OptimizerConfig
-from loss_functions import LossFunction
-from score_metrics import Metrics
+import matplotlib.pyplot as plt
+from data_loader import Data
+from configure import Configure
+# import wandb
+from trainer import Trainer
+from score_metrics import Accuracy as accuracy
+from argument_parser import parser
+
+# wandb.login(key = "f7cc061a6cf1c6d4f2791a84e81d1d16ee8adc8b")
 
 
-class Trainer:
-      def __init__(self, train_data:np.ndarray, train_labels:np.ndarray, val_data:np.ndarray, val_labels:np.ndarray):
+data = Data(0.1)
+(X_train, y_train), (X_val, y_val), (X_test, y_test) = data.load_data(0.1)
 
-            self.X_train = train_data
-            self.y_train = train_labels
+configuration = Configure()
 
-            self.X_val = val_data
-            self.y_val = val_labels
+args = parser.parse_args()
 
-            self.op_config = OptimizerConfig()
+configuration_script = args.__dict__
 
-      def learn(self, nn:NeuralNetwork, optim:Optimizer, loss_fn:LossFunction, lr:float, batch_size:int, epochs:int, acc_metrics:Metrics, **kwargs):
+def create_name(configuration:dict):
+      l = [f'{k}-{v}' for k,v in configuration.items() if k not in ['input_size', 'output_size']]
+      return '_'.join(l)
 
-            nn = nn
-            args = {k:v for k,v in kwargs.items()}
 
-            optim = self.op_config.configure(optim, lr = lr, **args)
-            loss = loss_fn()
-            acc = acc_metrics()
-
-            for epoch in range(epochs):
-
-                  for iter in range(int(len(self.X_train)/batch_size)):
-                  
-                        idx = np.random.randint(batch_size, len(self.X_train))
-
-                        x = self.X_train[idx - batch_size : idx]
-                        y = self.y_train[idx - batch_size : idx]
-
-                        params, logits = nn.forward(x)
-                        loss.compute(logits, y)
-                        grads = loss.backpropagate(params)
-                        updated_params = optim.update(params, grads)
-                        nn.set_params(updated_params)
-
-                  if epoch % 50 == 0 :
-                        train_loss = loss.compute(nn.infer(x), y)
-                        train_accuracy = acc.compute(nn.infer(x, False), y)
-                        val_accuracy = acc.compute(nn.infer(self.X_val, False), self.y_val)
-                        self.verbosity(train_loss, train_accuracy, val_accuracy)
-                  
-
-      def verbosity(self, train_loss, train_accuracy, val_accuracy):
-            print(f'Loss : {round(train_loss, 2)}      Train accuracy : {round(train_accuracy, 2)}      Validation accuracy : {round(val_accuracy, 2)}')
-            print('-------------------------------------------------------------------------------------')
-            
+# wandb.init(project="da24d008-assignment1", name = create_name(configuration_script), config = configuration_script)
 
 
 
+fig = data.display_collage((16, 14))
+# wandb.log({"Sample images from each class":fig})
 
 
+nn, optim, loss_fn = configuration.configure(configuration_script)
 
+nn.view_model_summary()
 
-
+trainer = Trainer(X_train, y_train, X_val, y_val, None)
+trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)

@@ -1,0 +1,31 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 5.11      Train accuracy : 24.97      Validation accuracy : 24.62
+-------------------------------------------------------------------------------------
+Loss : 5.07      Train accuracy : 27.8      Validation accuracy : 28.05
+-------------------------------------------------------------------------------------
+Loss : 5.07      Train accuracy : 24.35      Validation accuracy : 24.52
+-------------------------------------------------------------------------------------
+Loss : 5.07      Train accuracy : 24.05      Validation accuracy : 24.13
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    updated_params = optim.update(params, grads)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 106, in update
+    _, logits = self.forward(x)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 74, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params[prev_block]['o']) + self.params[block]['b']
+KeyboardInterrupt

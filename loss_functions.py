@@ -35,18 +35,11 @@ class CrossEntropy(LossFunction):
             self.del_yl = self.actual_class_vector.copy()
             
             for m in range(self.actual_class_vector.shape[1]):
+
                   self.actual_class_vector[:, m][true_classes[m]] = 1
                   self.loss -= np.log10(pred_logits[true_classes[m],m])
                   one_hot_class = self.actual_class_vector[:, m]
                   self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
-                  
-            #computing the cross entropy loss
-            
-
-            # print(self.del_yl)
-            # print(true_classes)
-            # print(pred_logits)
-            # print(self.actual_class_vector)
 
             return self.loss / pred_logits.shape[-1]
 
@@ -64,7 +57,7 @@ class CrossEntropy(LossFunction):
 
             for block in reversed((list(params.keys()))):
                   k = 0
-                  # print(block)
+                  
                   for layer in reversed((list(params[block].keys()))):
                         
                         if block[:-1] == 'output' :
@@ -78,29 +71,26 @@ class CrossEntropy(LossFunction):
                                     grads[block]['a'] = -(e_l - self.pred_logits)
                         
                         elif block[:-1] != 'output' and layer == 'a':
-                              # some problem is here
-                              # print(params[block]['a'])
-                              grads[block][layer] = np.multiply(grads[block]['o'], self.g_prime(params[block]['a']))*(1/self.pred_logits.shape[-1])
+                              
+                              grads[block][layer] = np.multiply(np.clip(grads[block]['o'], -1e10, 1e10), self.g_prime(params[block]['a']))*(1/self.pred_logits.shape[-1])
 
                         elif block[:-1] != 'output' and layer == 'o':
                               grads[block]['o'] = np.dot(grads[prev_block]['w'].T,(grads[prev_block]['a']))*(1/self.pred_logits.shape[-1])
-                              # grads[block]['o'] = np.matmul(grads[prev_block]['w'].T, grads[prev_block]['a'])
+                              
 
                         if layer == 'w' and int(block[-1]) > 0:
                               grads[block][layer] = np.dot(grads[block]['a'], params[list(params.keys())[int(block[-1]) - 1 ]]['o'].T)*(1/self.pred_logits.shape[-1])
-                              # grads[block][layer] = np.matmul(grads[block]['a'], params[list(params.keys())[int(block[-1]) - 1 ]]['o'].T)
+                              
 
                         elif layer == 'w' and int(block[-1]) == 0 :
                               grads[block][layer] = np.dot(grads[block]['a'], params['hidden0']['x'].T)*(1/self.pred_logits.shape[-1])
-                              # grads[block][layer] = np.matmul(grads[block]['a'], params['hidden0']['x'].T)
+                              
 
                         elif layer == 'b':
                               grads[block][layer] = grads[block]['a'].copy()
                               grads[block][layer] = grads[block][layer].sum(axis = -1).reshape(-1, 1)*(1/self.pred_logits.shape[-1])
 
-                        # if layer != 'h':
-                        #       print(f'{layer} : {grads[block][layer]}')
-
+                       
                         prev_block = block
                         k += 1
             return grads

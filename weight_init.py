@@ -15,7 +15,7 @@ class Random(WeightInitializer):
             pass 
 
       def initialize(self, dimension:tuple) -> np.ndarray:
-            return np.random.rand(dimension[0], dimension[1]) - 0.5
+            return np.random.rand(dimension[0], dimension[1])-0.5
 
 
 class Xavier(WeightInitializer):

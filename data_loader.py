@@ -66,3 +66,5 @@ class Data:
 
         i = (i+1) % 2  
         j = (j+1) % 5
+        
+    return fig

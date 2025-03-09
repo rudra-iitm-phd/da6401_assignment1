@@ -1,6 +1,6 @@
 from neural_network import NeuralNetwork
 from loss_functions import CrossEntropy
-from optimizer import GradientDescent, MomentumGradientDescent, NAG, Adagrad
+from optimizer import GradientDescent, MomentumGradientDescent, NAG, Adagrad, RMSProp
 
 
 class Configure:
@@ -22,23 +22,25 @@ class Configure:
             assert type(script['hidden_layers']) == list 
             assert type(script['input_size']) == int
             assert type(script['output_size']) == int
-            assert type(script['activation_functions']) == list 
+            assert type(script['activation']) == list 
             assert type(script['optimizer']) == str
-            assert type(script['loss_function']) == str
+            assert type(script['loss']) == str
             assert type(script['weight_init']) == str
+            
 
             self.hidden_layers = script['hidden_layers']
             self.input_size = script['input_size']
             self.output_size = script['output_size']
-            self.activation_functions = script['activation_functions']
+            self.activation_functions = script['activation']
             self.output_function = 'softmax'
-            self.loss_function = CrossEntropy if script['loss_function'] == 'cross entropy' else None
+            self.loss_function = CrossEntropy if script['loss'] == 'cross_entropy' else None
             self.weight_init = script['weight_init']
             self.optimizer_dict = {
                   "momentum": MomentumGradientDescent,
                   "vanilla":GradientDescent,
                   "nag":NAG,
-                  'adagrad':Adagrad
+                  'adagrad':Adagrad,
+                  'rmsprop': RMSProp
             }
             self.optimizer = self.optimizer_dict[script['optimizer'].lower()]
             

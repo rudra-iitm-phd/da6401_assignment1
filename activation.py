@@ -1,9 +1,12 @@
 import numpy as np
-from normalisation import UnitNormalisation as unit_normalise
+from normalisation import UnitNormalisation as unit_normalise, LogNormalisation as log_normalise, StandardNormal as std_normalise
+
 class ActivationFunctions:
 
   def __init__(self):
     self.unit_normaliser = unit_normalise()
+    self.log_normaliser = log_normalise()
+    self.std_normaliser = std_normalise()
 
   def get(self, name):
     if name == 'relu':
@@ -21,9 +24,6 @@ class ActivationFunctions:
 
   def sigmoid(self, x):
     x = x.copy()
-    # x = self.unit_normaliser.normalize(x) 
-    # x = self.unit_normaliser.normalize(x)
-    # x = self.unit_normaliser.normalize(x)
     z = -x
     z = z - np.max(z)
     return 1/(1 + np.exp(z))
@@ -35,4 +35,5 @@ class ActivationFunctions:
   def softmax(self, x):
     x = x.copy()
     x = x - np.max(x) 
+    x = self.unit_normaliser.normalize(x)*20 - 10
     return np.exp(x) / sum(np.exp(x))

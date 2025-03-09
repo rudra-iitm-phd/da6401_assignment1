@@ -1,0 +1,31 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.05      Train accuracy : 63.13      Validation accuracy : 62.96
+-------------------------------------------------------------------------------------
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/activation.py:39: RuntimeWarning: invalid value encountered in divide
+  return np.exp(x) / sum(np.exp(x))
+Loss : 6.0      Train accuracy : 9.33      Validation accuracy : 10.07
+-------------------------------------------------------------------------------------
+Loss : 6.0      Train accuracy : 9.33      Validation accuracy : 10.07
+-------------------------------------------------------------------------------------
+Loss : 6.0      Train accuracy : 9.33      Validation accuracy : 10.07
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 50, in learn
+    grads = loss.backpropagate(params)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 85, in backpropagate
+    grads[block]['o'] = np.dot(grads[prev_block]['w'].T,(grads[prev_block]['a']))*(1/self.pred_logits.shape[-1])
+KeyboardInterrupt

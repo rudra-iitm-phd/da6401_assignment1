@@ -1,0 +1,79 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:39: RuntimeWarning: divide by zero encountered in log10
+  self.loss -= np.log10(pred_logits[true_classes[m],m])
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: divide by zero encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: invalid value encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+Loss : inf      Train accuracy : 28.03      Validation accuracy : 28.14
+-------------------------------------------------------------------------------------
+Loss : 22.6      Train accuracy : 60.85      Validation accuracy : 58.98
+-------------------------------------------------------------------------------------
+Loss : 9.83      Train accuracy : 69.05      Validation accuracy : 67.26
+-------------------------------------------------------------------------------------
+Loss : 9.31      Train accuracy : 76.72      Validation accuracy : 74.55
+-------------------------------------------------------------------------------------
+Loss : 7.88      Train accuracy : 73.02      Validation accuracy : 71.57
+-------------------------------------------------------------------------------------
+Loss : 6.73      Train accuracy : 79.47      Validation accuracy : 76.86
+-------------------------------------------------------------------------------------
+Loss : 2.82      Train accuracy : 82.12      Validation accuracy : 78.28
+-------------------------------------------------------------------------------------
+Loss : 3.46      Train accuracy : 81.58      Validation accuracy : 77.6
+-------------------------------------------------------------------------------------
+Loss : 5.74      Train accuracy : 75.75      Validation accuracy : 72.33
+-------------------------------------------------------------------------------------
+Loss : 5.6      Train accuracy : 81.52      Validation accuracy : 77.29
+-------------------------------------------------------------------------------------
+Loss : 3.06      Train accuracy : 83.35      Validation accuracy : 79.33
+-------------------------------------------------------------------------------------
+Loss : 4.37      Train accuracy : 82.2      Validation accuracy : 78.15
+-------------------------------------------------------------------------------------
+Loss : 3.49      Train accuracy : 83.45      Validation accuracy : 79.71
+-------------------------------------------------------------------------------------
+Loss : 6.26      Train accuracy : 83.2      Validation accuracy : 78.94
+-------------------------------------------------------------------------------------
+Loss : 2.73      Train accuracy : 84.98      Validation accuracy : 80.45
+-------------------------------------------------------------------------------------
+Loss : 2.43      Train accuracy : 86.5      Validation accuracy : 80.36
+-------------------------------------------------------------------------------------
+Loss : 1.43      Train accuracy : 89.37      Validation accuracy : 83.13
+-------------------------------------------------------------------------------------
+Loss : 1.97      Train accuracy : 86.73      Validation accuracy : 80.2
+-------------------------------------------------------------------------------------
+Loss : 2.26      Train accuracy : 87.27      Validation accuracy : 81.81
+-------------------------------------------------------------------------------------
+Loss : 1.47      Train accuracy : 89.28      Validation accuracy : 82.05
+-------------------------------------------------------------------------------------
+Loss : 1.78      Train accuracy : 89.42      Validation accuracy : 82.29
+-------------------------------------------------------------------------------------
+Loss : 2.62      Train accuracy : 85.92      Validation accuracy : 79.18
+-------------------------------------------------------------------------------------
+Loss : 2.18      Train accuracy : 87.52      Validation accuracy : 80.96
+-------------------------------------------------------------------------------------
+Loss : 1.65      Train accuracy : 88.97      Validation accuracy : 82.24
+-------------------------------------------------------------------------------------
+Loss : 3.59      Train accuracy : 85.5      Validation accuracy : 79.79
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 58, in learn
+    val_accuracy = acc.compute(nn.infer(self.X_val, False), self.y_val)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 88, in infer
+    l = self.forward(x)[1]
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 73, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b']
+KeyboardInterrupt

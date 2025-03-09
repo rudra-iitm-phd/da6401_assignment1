@@ -1,0 +1,135 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:39: RuntimeWarning: divide by zero encountered in log10
+  self.loss -= np.log10(pred_logits[true_classes[m],m])
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: divide by zero encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: invalid value encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: overflow encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+Loss : inf      Train accuracy : 30.77      Validation accuracy : 30.87
+-------------------------------------------------------------------------------------
+Loss : 4.88      Train accuracy : 77.53      Validation accuracy : 75.43
+-------------------------------------------------------------------------------------
+Loss : 5.77      Train accuracy : 79.05      Validation accuracy : 76.91
+-------------------------------------------------------------------------------------
+Loss : 2.15      Train accuracy : 83.1      Validation accuracy : 79.57
+-------------------------------------------------------------------------------------
+Loss : 11.45      Train accuracy : 76.32      Validation accuracy : 73.91
+-------------------------------------------------------------------------------------
+Loss : 7.61      Train accuracy : 79.13      Validation accuracy : 75.63
+-------------------------------------------------------------------------------------
+Loss : 7.05      Train accuracy : 81.08      Validation accuracy : 77.91
+-------------------------------------------------------------------------------------
+Loss : 3.37      Train accuracy : 83.77      Validation accuracy : 79.85
+-------------------------------------------------------------------------------------
+Loss : 3.14      Train accuracy : 82.67      Validation accuracy : 78.91
+-------------------------------------------------------------------------------------
+Loss : 2.17      Train accuracy : 85.03      Validation accuracy : 79.54
+-------------------------------------------------------------------------------------
+Loss : 1.66      Train accuracy : 87.32      Validation accuracy : 81.57
+-------------------------------------------------------------------------------------
+Loss : 1.68      Train accuracy : 86.9      Validation accuracy : 81.33
+-------------------------------------------------------------------------------------
+Loss : 1.99      Train accuracy : 85.65      Validation accuracy : 80.46
+-------------------------------------------------------------------------------------
+Loss : 1.22      Train accuracy : 89.1      Validation accuracy : 82.12
+-------------------------------------------------------------------------------------
+Loss : 1.88      Train accuracy : 86.02      Validation accuracy : 79.76
+-------------------------------------------------------------------------------------
+Loss : 5.03      Train accuracy : 81.65      Validation accuracy : 75.64
+-------------------------------------------------------------------------------------
+Loss : 2.84      Train accuracy : 84.08      Validation accuracy : 78.01
+-------------------------------------------------------------------------------------
+Loss : 7.49      Train accuracy : 83.57      Validation accuracy : 78.32
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Network error (ConnectionError), entering retry loop.
+Loss : 2.64      Train accuracy : 85.8      Validation accuracy : 80.31
+-------------------------------------------------------------------------------------
+Loss : 2.39      Train accuracy : 85.68      Validation accuracy : 79.12
+-------------------------------------------------------------------------------------
+Loss : 1.89      Train accuracy : 87.3      Validation accuracy : 79.83
+-------------------------------------------------------------------------------------
+Loss : 3.22      Train accuracy : 81.93      Validation accuracy : 76.11
+-------------------------------------------------------------------------------------
+Loss : 2.86      Train accuracy : 87.08      Validation accuracy : 81.16
+-------------------------------------------------------------------------------------
+Loss : 2.43      Train accuracy : 86.88      Validation accuracy : 80.33
+-------------------------------------------------------------------------------------
+Loss : 2.88      Train accuracy : 84.53      Validation accuracy : 77.85
+-------------------------------------------------------------------------------------
+Loss : 5.9      Train accuracy : 84.83      Validation accuracy : 78.87
+-------------------------------------------------------------------------------------
+Loss : 4.82      Train accuracy : 79.98      Validation accuracy : 75.04
+-------------------------------------------------------------------------------------
+Loss : 1.22      Train accuracy : 90.22      Validation accuracy : 81.67
+-------------------------------------------------------------------------------------
+Loss : 1.69      Train accuracy : 87.38      Validation accuracy : 79.77
+-------------------------------------------------------------------------------------
+Loss : 0.95      Train accuracy : 91.58      Validation accuracy : 82.51
+-------------------------------------------------------------------------------------
+Loss : 1.25      Train accuracy : 90.72      Validation accuracy : 82.67
+-------------------------------------------------------------------------------------
+Loss : 4.18      Train accuracy : 80.73      Validation accuracy : 74.32
+-------------------------------------------------------------------------------------
+Loss : 1.94      Train accuracy : 89.03      Validation accuracy : 80.92
+-------------------------------------------------------------------------------------
+Loss : 3.52      Train accuracy : 84.35      Validation accuracy : 77.41
+-------------------------------------------------------------------------------------
+Loss : 0.97      Train accuracy : 91.93      Validation accuracy : 82.33
+-------------------------------------------------------------------------------------
+Loss : 1.0      Train accuracy : 91.02      Validation accuracy : 82.63
+-------------------------------------------------------------------------------------
+Loss : 1.03      Train accuracy : 92.2      Validation accuracy : 83.29
+-------------------------------------------------------------------------------------
+Loss : 2.46      Train accuracy : 83.07      Validation accuracy : 75.64
+-------------------------------------------------------------------------------------
+Loss : 3.93      Train accuracy : 86.62      Validation accuracy : 79.75
+-------------------------------------------------------------------------------------
+Loss : 1.51      Train accuracy : 89.2      Validation accuracy : 80.0
+-------------------------------------------------------------------------------------
+Loss : 1.26      Train accuracy : 90.22      Validation accuracy : 81.21
+-------------------------------------------------------------------------------------
+Loss : 1.35      Train accuracy : 90.88      Validation accuracy : 82.34
+-------------------------------------------------------------------------------------
+Loss : 3.98      Train accuracy : 85.45      Validation accuracy : 79.12
+-------------------------------------------------------------------------------------
+Loss : 1.11      Train accuracy : 91.5      Validation accuracy : 82.57
+-------------------------------------------------------------------------------------
+Loss : 4.2      Train accuracy : 83.2      Validation accuracy : 77.63
+-------------------------------------------------------------------------------------
+Loss : 1.51      Train accuracy : 90.23      Validation accuracy : 82.08
+-------------------------------------------------------------------------------------
+Loss : 2.47      Train accuracy : 86.42      Validation accuracy : 77.69
+-------------------------------------------------------------------------------------
+Loss : 2.03      Train accuracy : 84.88      Validation accuracy : 76.69
+-------------------------------------------------------------------------------------
+Loss : 0.79      Train accuracy : 93.07      Validation accuracy : 82.85
+-------------------------------------------------------------------------------------
+Loss : 1.51      Train accuracy : 90.32      Validation accuracy : 81.65
+-------------------------------------------------------------------------------------
+Loss : 1.46      Train accuracy : 88.85      Validation accuracy : 79.84
+-------------------------------------------------------------------------------------
+Loss : 0.85      Train accuracy : 91.5      Validation accuracy : 81.83
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 50, in learn
+    grads = loss.backpropagate(params)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 93, in backpropagate
+    grads[block][layer] = np.dot(grads[block]['a'], params['hidden0']['x'].T)*(1/self.pred_logits.shape[-1])
+  File "<__array_function__ internals>", line 180, in dot
+KeyboardInterrupt

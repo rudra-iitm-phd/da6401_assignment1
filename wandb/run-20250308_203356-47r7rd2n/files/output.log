@@ -1,0 +1,53 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:39: RuntimeWarning: divide by zero encountered in log10
+  self.loss -= np.log10(pred_logits[true_classes[m],m])
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: divide by zero encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py:41: RuntimeWarning: invalid value encountered in divide
+  self.del_yl[:, m] = -one_hot_class/pred_logits[true_classes[m],m]
+Loss : 22.02      Train accuracy : 29.82      Validation accuracy : 29.65
+-------------------------------------------------------------------------------------
+Loss : 4.58      Train accuracy : 78.17      Validation accuracy : 76.24
+-------------------------------------------------------------------------------------
+Loss : 7.28      Train accuracy : 69.13      Validation accuracy : 66.14
+-------------------------------------------------------------------------------------
+Loss : 2.4      Train accuracy : 80.7      Validation accuracy : 77.92
+-------------------------------------------------------------------------------------
+Loss : 6.6      Train accuracy : 71.9      Validation accuracy : 68.55
+-------------------------------------------------------------------------------------
+Loss : 1.51      Train accuracy : 86.33      Validation accuracy : 82.02
+-------------------------------------------------------------------------------------
+Loss : 4.69      Train accuracy : 82.67      Validation accuracy : 78.84
+-------------------------------------------------------------------------------------
+Loss : 4.19      Train accuracy : 81.65      Validation accuracy : 78.19
+-------------------------------------------------------------------------------------
+Loss : 4.41      Train accuracy : 80.35      Validation accuracy : 75.61
+-------------------------------------------------------------------------------------
+Loss : 4.58      Train accuracy : 82.63      Validation accuracy : 78.21
+-------------------------------------------------------------------------------------
+Loss : 3.78      Train accuracy : 77.47      Validation accuracy : 72.18
+-------------------------------------------------------------------------------------
+Loss : 2.07      Train accuracy : 82.32      Validation accuracy : 76.45
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 40, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 58, in learn
+    val_accuracy = acc.compute(nn.infer(self.X_val, False), self.y_val)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 88, in infer
+    l = self.forward(x)[1]
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 76, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params[prev_block]['o']) + self.params[block]['b']
+KeyboardInterrupt

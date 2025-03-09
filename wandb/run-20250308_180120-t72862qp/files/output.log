@@ -1,0 +1,144 @@
+Loss : 8.19      Train accuracy : 29.8      Validation accuracy : 29.77
+-------------------------------------------------------------------------------------
+Loss : 0.43      Train accuracy : 80.18      Validation accuracy : 78.24
+-------------------------------------------------------------------------------------
+Loss : 0.27      Train accuracy : 83.32      Validation accuracy : 80.87
+-------------------------------------------------------------------------------------
+Loss : 0.25      Train accuracy : 83.0      Validation accuracy : 79.67
+-------------------------------------------------------------------------------------
+Loss : 0.18      Train accuracy : 87.12      Validation accuracy : 82.59
+-------------------------------------------------------------------------------------
+Loss : 0.16      Train accuracy : 88.07      Validation accuracy : 83.06
+-------------------------------------------------------------------------------------
+Loss : 0.15      Train accuracy : 89.0      Validation accuracy : 83.8
+-------------------------------------------------------------------------------------
+Loss : 0.14      Train accuracy : 89.37      Validation accuracy : 83.46
+-------------------------------------------------------------------------------------
+Loss : 0.14      Train accuracy : 89.25      Validation accuracy : 82.76
+-------------------------------------------------------------------------------------
+Loss : 0.13      Train accuracy : 90.57      Validation accuracy : 83.6
+-------------------------------------------------------------------------------------
+Loss : 0.13      Train accuracy : 90.5      Validation accuracy : 83.16
+-------------------------------------------------------------------------------------
+Loss : 0.13      Train accuracy : 89.57      Validation accuracy : 82.56
+-------------------------------------------------------------------------------------
+Loss : 0.12      Train accuracy : 90.22      Validation accuracy : 82.86
+-------------------------------------------------------------------------------------
+Loss : 0.12      Train accuracy : 91.08      Validation accuracy : 83.65
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.53      Validation accuracy : 83.47
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.7      Validation accuracy : 83.26
+-------------------------------------------------------------------------------------
+Loss : 0.12      Train accuracy : 90.48      Validation accuracy : 82.5
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.87      Validation accuracy : 83.02
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.13      Validation accuracy : 82.63
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.77      Validation accuracy : 83.22
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 92.57      Validation accuracy : 83.53
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.58      Validation accuracy : 82.39
+-------------------------------------------------------------------------------------
+Loss : 0.11      Train accuracy : 91.53      Validation accuracy : 82.38
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 93.03      Validation accuracy : 83.1
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 92.12      Validation accuracy : 83.31
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 92.22      Validation accuracy : 82.57
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.57      Validation accuracy : 83.12
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 92.92      Validation accuracy : 83.15
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 92.65      Validation accuracy : 82.69
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 92.07      Validation accuracy : 82.26
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.37      Validation accuracy : 83.08
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.72      Validation accuracy : 82.97
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.1      Validation accuracy : 82.94
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.27      Validation accuracy : 82.82
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 92.98      Validation accuracy : 82.44
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.42      Validation accuracy : 82.9
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.92      Validation accuracy : 82.92
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.33      Validation accuracy : 82.55
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.18      Validation accuracy : 83.19
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.82      Validation accuracy : 82.86
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.78      Validation accuracy : 82.74
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.53      Validation accuracy : 83.01
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.27      Validation accuracy : 82.49
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.25      Validation accuracy : 83.14
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.02      Validation accuracy : 82.8
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.67      Validation accuracy : 82.91
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 93.07      Validation accuracy : 81.76
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.43      Validation accuracy : 82.83
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 92.68      Validation accuracy : 81.95
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.17      Validation accuracy : 82.61
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.33      Validation accuracy : 82.9
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 93.23      Validation accuracy : 82.46
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.38      Validation accuracy : 82.54
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 95.05      Validation accuracy : 82.86
+-------------------------------------------------------------------------------------
+Loss : 0.08      Train accuracy : 94.25      Validation accuracy : 82.37
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.82      Validation accuracy : 82.98
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.85      Validation accuracy : 82.71
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.78      Validation accuracy : 82.73
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.75      Validation accuracy : 82.69
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.87      Validation accuracy : 82.78
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.82      Validation accuracy : 82.66
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 95.32      Validation accuracy : 82.66
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 95.08      Validation accuracy : 82.95
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 95.0      Validation accuracy : 82.68
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 95.18      Validation accuracy : 82.57
+-------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 94.95      Validation accuracy : 82.61
+-------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/train.py", line 37, in <module>
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=0.1, batch_size=1000, epochs=1000, acc_metrics=accuracy, loss = loss_fn, beta = 0.9, forward=nn.forward)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    updated_params = optim.update(params, grads)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 95, in update
+    grad_lookahead = self.loss_fn.backpropagate(lookahead_params)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 82, in backpropagate
+    grads[block][layer] = np.multiply(grads[block]['o'], self.g_prime(params[block]['a']))*(1/self.pred_logits.shape[-1])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 108, in g_prime
+    return x>0
+KeyboardInterrupt
