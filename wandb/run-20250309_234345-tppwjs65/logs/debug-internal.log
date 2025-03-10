@@ -1,0 +1,16 @@
+{"time":"2025-03-09T23:43:45.193561+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250309_234345-tppwjs65/logs/debug-core.log"}
+{"time":"2025-03-09T23:43:45.309982+05:30","level":"INFO","msg":"created new stream","id":"tppwjs65"}
+{"time":"2025-03-09T23:43:45.310038+05:30","level":"INFO","msg":"stream: started","id":"tppwjs65"}
+{"time":"2025-03-09T23:43:45.310208+05:30","level":"INFO","msg":"handler: started","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:45.31036+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:45.310831+05:30","level":"INFO","msg":"sender: started","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:45.898828+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-09T23:43:46.972216+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-09T23:43:46.973209+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-09T23:43:47.983597+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/Sample images from each class_0_7969f12544bc08dc85c9.png","runtime_seconds":0.705825,"progress":"51.1KB/51.1KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.705772083,"progress":"355B/355B"},{"desc":"uploading config.yaml","runtime_seconds":0.347990292,"progress":"1.2KB/1.2KB"}],"total_operations":3}}
+{"time":"2025-03-09T23:43:48.570354+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-09T23:43:48.901859+05:30","level":"INFO","msg":"stream: closing","id":"tppwjs65"}
+{"time":"2025-03-09T23:43:48.901931+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:48.901959+05:30","level":"INFO","msg":"sender: closed","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:48.902161+05:30","level":"INFO","msg":"handler: closed","stream_id":"tppwjs65"}
+{"time":"2025-03-09T23:43:48.902191+05:30","level":"INFO","msg":"stream: closed","id":"tppwjs65"}

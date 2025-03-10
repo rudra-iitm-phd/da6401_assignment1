@@ -1,0 +1,23 @@
+2025-03-09 23:20:21,447 INFO    Thread-3  :27924 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-09 23:20:21,447 INFO    Thread-3  :27924 [wandb_setup.py:_flush():67] Configure stats pid to 27924
+2025-03-09 23:20:21,447 INFO    Thread-3  :27924 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-03-09 23:20:21,447 INFO    Thread-3  :27924 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/settings
+2025-03-09 23:20:21,447 INFO    Thread-3  :27924 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250309_232021-1sdqjapx/logs/debug.log
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250309_232021-1sdqjapx/logs/debug-internal.log
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:init():761] calling init triggers
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 128, 'beta1': 0.8696103077246036, 'beta2': 0.9786563552629804, 'epochs': 500, 'hidden_size': [512], 'learning_rate': 0.0001301420357018034, 'loss': 'cross_entropy', 'momentum': 0.8190753754976461, 'num_layers': 1, 'optimizer': 'adam', 'weight_decay': 0.0008679209141966205, 'weight_init': 'random'}
+config: {'epochs': 1000, 'batch_size': 512, 'loss': 'cross_entropy', 'optimizer': 'momentum', 'learning_rate': 0.01, 'weight_init': 'random', 'hidden_size': [784], 'num_layers': 1, 'input_size': 784, 'output_size': 10, 'beta': 0.5, 'activation': 'relu', 'weight_decay': 0, 'beta1': 0.5, 'beta2': 0.5, 'epsilon': 1e-06, 'momentum': 0.5, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'da24d008-assignment1', 'wandb_sweep': True, '_wandb': {}}
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:init():784] starting backend
+2025-03-09 23:20:21,448 INFO    Thread-3  :27924 [wandb_init.py:init():788] sending inform_init request
+2025-03-09 23:20:21,483 INFO    Thread-3  :27924 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-03-09 23:20:21,483 INFO    Thread-3  :27924 [wandb_init.py:init():798] backend started and connected
+2025-03-09 23:20:21,484 INFO    Thread-3  :27924 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 128, 'beta1': 0.8696103077246036, 'beta2': 0.9786563552629804, 'epochs': 500, 'hidden_size': [512], 'learning_rate': 0.0001301420357018034, 'loss': 'cross_entropy', 'momentum': 0.8190753754976461, 'num_layers': 1, 'optimizer': 'adam', 'weight_decay': 0.0008679209141966205, 'weight_init': 'random'}
+2025-03-09 23:20:21,488 INFO    Thread-3  :27924 [wandb_init.py:init():891] updated telemetry
+2025-03-09 23:20:21,512 INFO    Thread-3  :27924 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-09 23:20:21,981 INFO    Thread-3  :27924 [wandb_init.py:init():990] starting run threads in backend
+2025-03-09 23:20:22,089 INFO    Thread-3  :27924 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-09 23:20:22,089 INFO    Thread-3  :27924 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-09 23:20:22,089 INFO    Thread-3  :27924 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-09 23:20:22,089 INFO    Thread-3  :27924 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-09 23:20:22,092 INFO    Thread-3  :27924 [wandb_init.py:init():1032] run started, returning control to user process

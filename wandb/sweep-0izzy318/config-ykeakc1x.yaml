@@ -1,0 +1,38 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch_size:
+  value: 657
+beta:
+  value: 0.8406508466651561
+beta1:
+  value: 0.43586846366321663
+beta2:
+  value: 0.9386045185075124
+epochs:
+  value: 1761
+epsilon:
+  value: 6.361181052988157e-07
+input_size:
+  value: 1364
+learning_rate:
+  value: 0.005689856938135521
+loss:
+  value: cross_entropy
+momentum:
+  value: 1.217449799909324
+optimizer:
+  value: momentum
+output_size:
+  value: 14
+wandb_entity:
+  value: da24d008-iit-madras
+wandb_project:
+  value: da24d008-assignment1
+wandb_sweep:
+  value: 'false'
+weight_decay:
+  value: 0.0005058215347161756
+weight_init:
+  value: xavier

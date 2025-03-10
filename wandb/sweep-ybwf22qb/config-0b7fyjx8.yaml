@@ -1,0 +1,42 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch_size:
+  value: 578
+beta:
+  value: 0.8175961945599599
+beta1:
+  value: 1.1248570622284977
+beta2:
+  value: 1.372938162761231
+epochs:
+  value: 818
+epsilon:
+  value: 1.7935543563947797e-06
+input_size:
+  value: 507
+learning_rate:
+  value: 0.10589661579046487
+loss:
+  value: cross_entropy
+loss_function:
+  value: cross entropy
+momentum:
+  value: 0.9554461879417424
+num_layers:
+  value: 1
+optimizer:
+  value: adam
+output_size:
+  value: 16
+wandb_entity:
+  value: da24d008-iit-madras
+wandb_project:
+  value: da24d008-assignment1
+wandb_sweep:
+  value: 'true'
+weight_decay:
+  value: 0.8944047687540818
+weight_init:
+  value: random

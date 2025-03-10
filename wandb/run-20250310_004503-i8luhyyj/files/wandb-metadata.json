@@ -1,0 +1,19 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.8.16",
+  "startedAt": "2025-03-09T19:15:03.359345Z",
+  "args": [
+    "--wandb_sweep"
+  ],
+  "program": "train.py",
+  "codePath": "train.py",
+  "git": {
+    "remote": "https://github.com/rudra-iitm-phd/da6401_assignment1.git",
+    "commit": "64d15beab32c294d2a3fa538410d0999f8cf0aca"
+  },
+  "email": "da24d008@smail.iitm.ac.in",
+  "root": "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1",
+  "host": "Rudras-MacBook-Air.local",
+  "executable": "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/bin/python",
+  "codePathLocal": "train.py"
+}

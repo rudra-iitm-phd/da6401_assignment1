@@ -4,3 +4,5 @@ import numpy as np
 
 x = None
 y = None
+acv_fn = None
+output_fn = None

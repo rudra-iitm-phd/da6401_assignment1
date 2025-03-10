@@ -26,12 +26,16 @@ parser.add_argument('-w_i', '--weight_init',
                   type = str, default = 'random', 
                   help = 'choices : ["random", "xavier"]')
 
-parser.add_argument('-hl', '--hidden_layers', 
-                  type = int, default = 728, nargs = '+', 
-                  help = 'Hidden layer configuration e.g. : [32, 128, 64]')
+parser.add_argument('-sz', '--hidden_size', 
+                  type = int, default = [784], nargs = '+', 
+                  help = 'Number of hidden neurons in a feedforward layer.')
+
+parser.add_argument('-nhl', '--num_layers', 
+                  type = int, default = 1, 
+                  help = 'Number of hidden layers used in feedforward neural network.')
 
 parser.add_argument('-si', '--input_size', 
-                  type = int, default = 728, 
+                  type = int, default = 784, 
                   help = 'Size of the input')
 
 parser.add_argument('-so', '--output_size', 
@@ -39,20 +43,43 @@ parser.add_argument('-so', '--output_size',
                   help = 'Output size')
 
 parser.add_argument('-beta', '--beta', 
-                  type = float, default = 0.9, 
+                  type = float, default = 0.5, 
                   help = 'Value of beta used in rmsprop')
 
 
 parser.add_argument('-a', '--activation', 
-                  type = str, default = 'relu', nargs = '+',
+                  type = str, default = 'relu',
                   help = 'Choices : ["identity", "sigmoid", "tanh", "ReLU"]')
 
 parser.add_argument('-w_d', '--weight_decay', 
                   type = float, default = 0,
                   help = 'Weight decay used by optimizers.(L2 Regularization)')
 
+parser.add_argument('-beta1', '--beta1', 
+                  type = float, default = 0.5,
+                  help = 'Beta1 used by adam and nadam optimizers')
 
 
+parser.add_argument('-beta2', '--beta2', 
+                  type = float, default = 0.5,
+                  help = 'Beta2 used by adam and nadam optimizers')
 
+parser.add_argument('-eps', '--epsilon', 
+                  type = float, default = 1e-6,
+                  help = 'Epsilon used by optimizers')
 
+parser.add_argument('-m', '--momentum', 
+                  type = float, default = 0.5,
+                  help = 'Momentum used by momentum and nag optimizers.')
 
+parser.add_argument('-we', '--wandb_entity', 
+                  type = str, default = 'da24d008-iit-madras' ,
+                  help = 'Wandb Entity used to track experiments in the Weights & Biases dashboard')
+
+parser.add_argument('-wp', '--wandb_project', 
+                  type = str, default = 'da24d008-assignment1' ,
+                  help = 'Project name used to track experiments in Weights & Biases dashboard')
+
+parser.add_argument('--wandb_sweep', action='store_true', help='Enable W&B sweep')
+
+parser.add_argument('--sweep_id', type = str, help = "Sweep ID", default = None)

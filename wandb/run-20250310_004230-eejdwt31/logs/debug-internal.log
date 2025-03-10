@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:42:30.70801+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250310_004230-eejdwt31/logs/debug-core.log"}
+{"time":"2025-03-10T00:42:30.824717+05:30","level":"INFO","msg":"created new stream","id":"eejdwt31"}
+{"time":"2025-03-10T00:42:30.824771+05:30","level":"INFO","msg":"stream: started","id":"eejdwt31"}
+{"time":"2025-03-10T00:42:30.824803+05:30","level":"INFO","msg":"sender: started","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:42:30.824811+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:42:30.824901+05:30","level":"INFO","msg":"handler: started","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:42:31.208929+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:44:06.230876+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:44:06.232592+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:44:07.247096+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-eejdwt31-ConfusionMatrixTable","runtime_seconds":2.944248958,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":1.5967261659999998,"progress":"141.0KB/141.0KB"}]}],"total_operations":1}}
+{"time":"2025-03-10T00:44:08.73875+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:44:09.058238+05:30","level":"INFO","msg":"stream: closing","id":"eejdwt31"}
+{"time":"2025-03-10T00:44:09.058275+05:30","level":"INFO","msg":"handler: closed","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:44:09.058291+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:44:09.058488+05:30","level":"INFO","msg":"sender: closed","stream_id":"eejdwt31"}
+{"time":"2025-03-10T00:44:09.058531+05:30","level":"INFO","msg":"stream: closed","id":"eejdwt31"}

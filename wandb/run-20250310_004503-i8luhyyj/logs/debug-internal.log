@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:45:03.363889+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250310_004503-i8luhyyj/logs/debug-core.log"}
+{"time":"2025-03-10T00:45:03.486229+05:30","level":"INFO","msg":"created new stream","id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:03.486272+05:30","level":"INFO","msg":"stream: started","id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:03.486287+05:30","level":"INFO","msg":"handler: started","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:03.486301+05:30","level":"INFO","msg":"sender: started","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:03.486343+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:03.791736+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:45:04.349844+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:45:04.350146+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:45:05.358765+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/Sample images from each class_0_ee8d01f268ca46b4c3a2.png","runtime_seconds":0.565522542,"progress":"52.1KB/52.1KB"},{"desc":"uploading config.yaml","runtime_seconds":0.245832542,"progress":"1.2KB/1.2KB"}],"total_operations":2}}
+{"time":"2025-03-10T00:45:05.626101+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:45:05.927432+05:30","level":"INFO","msg":"stream: closing","id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:05.927468+05:30","level":"INFO","msg":"handler: closed","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:05.927485+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:05.927503+05:30","level":"INFO","msg":"sender: closed","stream_id":"i8luhyyj"}
+{"time":"2025-03-10T00:45:05.927744+05:30","level":"INFO","msg":"stream: closed","id":"i8luhyyj"}

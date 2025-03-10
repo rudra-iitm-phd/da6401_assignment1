@@ -1,0 +1,54 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (512, 784)
+bias : (512, 1)
+activation : sigmoid
+---------------------------------------
+output1
+weights : (10, 512)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 407050
+Loss : 3.49      Train accuracy : 11.95      Validation accuracy : 11.75
+-------------------------------------------------------------------------------------
+Loss : 2.23      Train accuracy : 31.72      Validation accuracy : 30.26
+-------------------------------------------------------------------------------------
+Loss : 1.24      Train accuracy : 50.52      Validation accuracy : 49.42
+-------------------------------------------------------------------------------------
+Loss : 0.9      Train accuracy : 60.03      Validation accuracy : 58.47
+-------------------------------------------------------------------------------------
+Loss : 0.74      Train accuracy : 65.27      Validation accuracy : 63.04
+-------------------------------------------------------------------------------------
+Loss : 0.64      Train accuracy : 68.2      Validation accuracy : 65.82
+-------------------------------------------------------------------------------------
+Loss : 0.57      Train accuracy : 70.17      Validation accuracy : 67.64
+-------------------------------------------------------------------------------------
+Loss : 0.52      Train accuracy : 71.9      Validation accuracy : 69.48
+-------------------------------------------------------------------------------------
+Loss : 0.48      Train accuracy : 73.47      Validation accuracy : 70.6
+-------------------------------------------------------------------------------------
+Loss : 0.44      Train accuracy : 74.43      Validation accuracy : 71.52
+-------------------------------------------------------------------------------------
+Loss : 0.42      Train accuracy : 75.23      Validation accuracy : 72.45
+-------------------------------------------------------------------------------------
+Loss : 0.39      Train accuracy : 76.17      Validation accuracy : 73.38
+-------------------------------------------------------------------------------------
+Loss : 0.37      Train accuracy : 76.8      Validation accuracy : 73.88
+-------------------------------------------------------------------------------------
+Loss : 0.36      Train accuracy : 77.53      Validation accuracy : 74.48
+-------------------------------------------------------------------------------------
+Loss : 0.34      Train accuracy : 77.93      Validation accuracy : 74.88
+-------------------------------------------------------------------------------------
+Loss : 0.33      Train accuracy : 78.67      Validation accuracy : 75.45
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Traceback (most recent call last):
+  File "train.py", line 48, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 50, in learn
+    grads = loss.backpropagate(params)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 89, in backpropagate
+    grads[block][layer] = np.dot(grads[block]['a'], params['hidden0']['x'].T)*(1/self.pred_logits.shape[-1])
+Exception

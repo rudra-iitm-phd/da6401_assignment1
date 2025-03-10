@@ -1,0 +1,28 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch_size:
+  value: 512
+beta1:
+  value: 0.9044910606762993
+beta2:
+  value: 0.9537768950510852
+epochs:
+  value: 200
+hidden_size:
+  value:
+  - 784
+  - 10
+learning_rate:
+  value: 0.012974683193081551
+loss:
+  value: mean_squared_error
+momentum:
+  value: 0.7747478035615949
+optimizer:
+  value: adam
+weight_decay:
+  value: 0.00082605815478322
+weight_init:
+  value: xavier

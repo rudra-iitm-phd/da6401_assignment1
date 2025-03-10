@@ -4,9 +4,10 @@ from normalisation import UnitNormalisation as unit_normalise
 from copy import deepcopy
 from preprocess import PreProcessor as pp
 from weight_init import Xavier, Random
+import shared
 class NeuralNetwork:
 
-  def __init__(self, width_of_layers:list, input_size:int, output_size:int, activation_list:list, output_fn:str, weight_init:str):
+  def __init__(self, width_of_layers:list, input_size:int, output_size:int, activation_fn:str, output_fn:str, weight_init:str):
 
 
     assert weight_init.lower() in ['random', 'xavier']
@@ -19,9 +20,13 @@ class NeuralNetwork:
     self.output_size = output_size
     self.total_params = 0
     self.activation_functions = ActivationFunctions()
-    self.activations = {f'{activation}{i}' : self.activation_functions.get(activation) for (i,activation) in enumerate(activation_list + [output_fn])}
+    self.activation_function = self.activation_functions.get(activation_fn)
     self.pp = pp()
-    
+    self.output_fn = self.activation_functions.get('softmax')
+    shared.acv_fn = activation_fn
+    shared.output_fn = 'softmax'
+  
+   
 
     self.weight_init = None
 
@@ -40,16 +45,16 @@ class NeuralNetwork:
     layers = dict()
     for i,j in enumerate(range(self.n_hidden)):
       if i == 0:
-        layers[f'hidden{i}'] = { 'w': self.weight_init.initialize((self.width_of_layers[i], self.input_size)), 'b': self.weight_init.initialize((self.width_of_layers[i], 1)), 'h': self.activations[list(self.activations.keys())[i]]}
+        layers[f'hidden{i}'] = { 'w': self.weight_init.initialize((self.width_of_layers[i], self.input_size)), 'b': self.weight_init.initialize((self.width_of_layers[i], 1)), 'h': self.activation_function}
         
 
       else:
-        layers[f'hidden{i}'] = {'w' : self.weight_init.initialize((self.width_of_layers[i], self.width_of_layers[i-1])) , 'b': self.weight_init.initialize((self.width_of_layers[i], 1)), 'h': self.activations[list(self.activations.keys())[i]]  }
+        layers[f'hidden{i}'] = {'w' : self.weight_init.initialize((self.width_of_layers[i], self.width_of_layers[i-1])) , 'b': self.weight_init.initialize((self.width_of_layers[i], 1)), 'h': self.activation_function  }
         
 
       self.total_params += layers[f'hidden{i}']['w'].shape[0] * layers[f'hidden{i}']['w'].shape[1] + layers[f'hidden{i}']['b'].shape[0]
       
-    layers[f'output{self.n_hidden}'] = {'w' : self.weight_init.initialize((self.output_size, self.width_of_layers[-1])) , 'b': self.weight_init.initialize((self.output_size , 1)), 'h': self.activations[list(self.activations.keys())[self.n_hidden]]}
+    layers[f'output{self.n_hidden}'] = {'w' : self.weight_init.initialize((self.output_size, self.width_of_layers[-1])) , 'b': self.weight_init.initialize((self.output_size , 1)), 'h': self.output_fn}
 
     self.total_params += layers[f'output{self.n_hidden}']['w'].shape[0] * layers[f'output{self.n_hidden}']['w'].shape[1] + layers[f'output{self.n_hidden}']['b'].shape[0]
 
@@ -95,13 +100,16 @@ class NeuralNetwork:
   
   def view_model_summary(self):
     print('Model Summary')
-    for (i,j),k in zip(enumerate(list(self.hidden.keys())), list(self.activations.keys())):
+    for i,j in enumerate(list(self.hidden.keys())):
       print('---------------------------------------')
       print(f'{j}')
 
       print(f"weights : {self.hidden[j]['w'].shape}")
       print(f"bias : {self.hidden[j]['b'].shape}")
-      print(f'activation : {k[:-1]}')
+      if i == self.n_hidden:
+        print(f'activation : {shared.output_fn}')
+      else:
+        print(f'activation : {shared.acv_fn}')
     
     print('---------------------------------------')
     print(f'Total Number of Parameters : {self.total_params}')

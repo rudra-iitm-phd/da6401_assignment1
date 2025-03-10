@@ -24,13 +24,13 @@ class OptimizerConfig:
                   return GradientDescent(args['lr'], weight_decay = weight_decay)
                   
             elif optim == MomentumGradientDescent:
-                  if 'beta' not in args.keys():
+                  if 'momentum' not in args.keys():
                         return MomentumGradientDescent(args['lr'], weight_decay = weight_decay)
-                  else : return MomentumGradientDescent(args['lr'], beta = args['beta'], weight_decay = weight_decay)
+                  else : return MomentumGradientDescent(args['lr'], momentum = args['momentum'], weight_decay = weight_decay)
             elif optim == NAG:
-                  if 'beta' not in args.keys():
+                  if 'momentum' not in args.keys():
                         return NAG(learning_rate = args['lr'], loss_fn =  args['loss'], forward = args['forward'], weight_decay = weight_decay)
-                  else: return NAG(learning_rate = args['lr'], loss_fn =  args['loss'], forward = args['forward'], beta = args['beta'], weight_decay = weight_decay)
+                  else: return NAG(learning_rate = args['lr'], loss_fn =  args['loss'], forward = args['forward'], momentum = args['momentum'], weight_decay = weight_decay)
 
             elif optim == Adagrad:
 
@@ -39,6 +39,9 @@ class OptimizerConfig:
             elif optim == RMSProp:
 
                   return RMSProp(args['lr'], beta = args['beta'], weight_decay = weight_decay)
+
+            elif optim == Adam:
+                  return Adam(learning_rate = args['lr'], beta1 = args['beta1'], beta2 = args['beta2'], eps = args['eps'], weight_decay = args['weight_decay'])
 
 
 
@@ -60,10 +63,10 @@ class GradientDescent(Optimizer):
             return params
 
 class MomentumGradientDescent(Optimizer):
-      def __init__(self, learning_rate, weight_decay = 0, beta = 0.8):
+      def __init__(self, learning_rate, weight_decay = 0, momentum = 0.8):
             
             self.lr = learning_rate
-            self.beta = beta 
+            self.momentum = momentum
             self.prev_update = None
             self.t = 0
             self.weight_decay = weight_decay
@@ -76,7 +79,7 @@ class MomentumGradientDescent(Optimizer):
             for block in list(params.keys()):
                   for layer in list(params[block].keys()):
                         if layer in ['w', 'b'] :
-                              self.prev_update[block][layer] = self.beta * self.prev_update[block][layer] + grads[block][layer]
+                              self.prev_update[block][layer] = self.momentum * self.prev_update[block][layer] + grads[block][layer]
                               if layer == 'w':
                                     params[block][layer] = params[block][layer] - self.lr * (self.prev_update[block][layer] + self.weight_decay * params[block][layer])
                               elif layer == 'b':
@@ -88,10 +91,10 @@ class MomentumGradientDescent(Optimizer):
 
 class NAG(Optimizer):
 
-      def __init__(self, learning_rate,  forward, loss_fn:LossFunction, weight_decay = 0,  beta = 0.8):
+      def __init__(self, learning_rate,  forward, loss_fn:LossFunction, weight_decay = 0,  momentum = 0.8):
             
             self.lr = learning_rate
-            self.beta = beta 
+            self.momentum = momentum
             self.prev_update = None
             self.t = 0
             self.loss_fn = loss_fn()
@@ -117,7 +120,7 @@ class NAG(Optimizer):
                   for layer in list(params[block].keys()):
                         if layer in ['w', 'b'] :
 
-                              self.prev_update[block][layer] = self.beta * self.prev_update[block][layer] + grad_lookahead[block][layer]
+                              self.prev_update[block][layer] = self.momentum * self.prev_update[block][layer] + grad_lookahead[block][layer]
                               
                               if layer == 'w':
                                     params[block][layer] = params[block][layer] - self.lr * (self.prev_update[block][layer] + self.weight_decay * params[block][layer])
@@ -197,6 +200,56 @@ class RMSProp(Optimizer):
             self.t += 1
 
             return params
+
+
+class Adam(Optimizer):
+      def __init__(self, learning_rate, beta1:float, beta2:float, eps:float, weight_decay = 0):
+            self.lr = learning_rate
+            self.beta1 = beta1
+            self.beta2 = beta2
+            self.eps = eps
+            self.weight_decay = weight_decay
+            self.t = 0
+            self.prev_moments = None
+            self.prev_grads_squared = None
+
+      def update(self, params:dict, grads:dict):
+
+            params = params.copy()
+
+            if self.t == 0:
+                  self.prev_moments = {block:{layer:np.zeros_like(params[block][layer]) if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+
+                  self.prev_grads_squared = {block:{layer:np.zeros_like(params[block][layer]) if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+
+            for block in list(params.keys()):
+                  for layer in list(params[block].keys()):
+                        if layer in ['w', 'b'] :
+                              
+                              self.prev_moments[block][layer] =  self.beta1 * self.prev_moments[block][layer] + (1 - self.beta1) * grads[block][layer]
+
+                              self.prev_grads_squared[block][layer] = self.beta2 * self.prev_grads_squared[block][layer] + (1 - self.beta2) * np.power(grads[block][layer], 2)
+
+                              # bias correction
+                              mt_hat = self.prev_moments[block][layer] / (1 - self.beta1**(self.t + 1))
+                              vt_hat = self.prev_grads_squared[block][layer] / (1 - self.beta2**(self.t + 1))
+
+
+                              if layer == 'w':
+                                    params[block][layer] = params[block][layer] - np.multiply(self.lr/np.sqrt( vt_hat + 1e-8), mt_hat) - self.weight_decay * self.lr * params[block][layer]
+
+                              elif layer == 'b':
+                                    params[block][layer] = params[block][layer] - np.multiply(self.lr/np.sqrt(vt_hat + 1e-8), mt_hat)
+
+            self.t += 1
+
+            return params
+
+            
+
+            
+            
+            
 
 
       

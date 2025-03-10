@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:47:02.372427+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250310_004702-2thte607/logs/debug-core.log"}
+{"time":"2025-03-10T00:47:02.491308+05:30","level":"INFO","msg":"created new stream","id":"2thte607"}
+{"time":"2025-03-10T00:47:02.491506+05:30","level":"INFO","msg":"stream: started","id":"2thte607"}
+{"time":"2025-03-10T00:47:02.491679+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:02.491743+05:30","level":"INFO","msg":"handler: started","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:02.491853+05:30","level":"INFO","msg":"sender: started","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:02.87445+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:47:03.943824+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:47:03.945122+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:47:04.952903+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/Sample images from each class_0_eb0a9370a3d536a95a17.png","runtime_seconds":0.693813042,"progress":"50.6KB/50.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.377158709,"progress":"1.2KB/1.2KB"}],"total_operations":2}}
+{"time":"2025-03-10T00:47:05.563717+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:47:05.91549+05:30","level":"INFO","msg":"stream: closing","id":"2thte607"}
+{"time":"2025-03-10T00:47:05.915563+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:05.915588+05:30","level":"INFO","msg":"sender: closed","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:05.915769+05:30","level":"INFO","msg":"handler: closed","stream_id":"2thte607"}
+{"time":"2025-03-10T00:47:05.915805+05:30","level":"INFO","msg":"stream: closed","id":"2thte607"}

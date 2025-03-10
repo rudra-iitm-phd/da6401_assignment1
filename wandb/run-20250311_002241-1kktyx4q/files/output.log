@@ -1,0 +1,58 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+hidden1
+weights : (10, 784)
+bias : (10, 1)
+activation : relu
+---------------------------------------
+output2
+weights : (10, 10)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623400
+Loss : 0.14      Train accuracy : 11.4      Validation accuracy : 11.04      Test Accuracy : 11.44
+-------------------------------------------------------------------------------------
+Loss : 0.1      Train accuracy : 27.33      Validation accuracy : 25.81      Test Accuracy : 25.99
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 35.9      Validation accuracy : 34.03      Test Accuracy : 34.67
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.18      Validation accuracy : 35.42      Test Accuracy : 35.83
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.63      Validation accuracy : 35.66      Test Accuracy : 35.51
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.82      Validation accuracy : 35.63      Test Accuracy : 35.81
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.18      Validation accuracy : 35.5      Test Accuracy : 35.76
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.15      Validation accuracy : 35.27      Test Accuracy : 35.6
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.2      Validation accuracy : 35.63      Test Accuracy : 35.94
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.07      Validation accuracy : 35.04      Test Accuracy : 35.42
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.03      Validation accuracy : 35.22      Test Accuracy : 35.66
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.85      Validation accuracy : 35.09      Test Accuracy : 35.4
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 37.02      Validation accuracy : 35.05      Test Accuracy : 35.17
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.72      Validation accuracy : 34.77      Test Accuracy : 35.03
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.62      Validation accuracy : 34.73      Test Accuracy : 35.14
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.83      Validation accuracy : 34.85      Test Accuracy : 35.09
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.72      Validation accuracy : 34.55      Test Accuracy : 34.69
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.2      Validation accuracy : 34.42      Test Accuracy : 34.72
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.08      Validation accuracy : 34.36      Test Accuracy : 34.68
+-------------------------------------------------------------------------------------
+Loss : 0.09      Train accuracy : 36.13      Validation accuracy : 34.35      Test Accuracy : 34.61
+-------------------------------------------------------------------------------------

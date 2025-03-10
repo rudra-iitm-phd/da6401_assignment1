@@ -1,0 +1,16 @@
+{"time":"2025-03-10T00:44:52.115132+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250310_004452-2sua1m59/logs/debug-core.log"}
+{"time":"2025-03-10T00:44:52.231989+05:30","level":"INFO","msg":"created new stream","id":"2sua1m59"}
+{"time":"2025-03-10T00:44:52.232225+05:30","level":"INFO","msg":"stream: started","id":"2sua1m59"}
+{"time":"2025-03-10T00:44:52.232251+05:30","level":"INFO","msg":"handler: started","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:52.23249+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:52.23289+05:30","level":"INFO","msg":"sender: started","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:52.557392+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T00:44:53.635149+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T00:44:53.635829+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T00:44:54.64673+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/Sample images from each class_0_91c3a842e2eaa286bb00.png","runtime_seconds":0.698692125,"progress":"49.6KB/49.6KB"}],"total_operations":1}}
+{"time":"2025-03-10T00:44:54.657156+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T00:44:54.99286+05:30","level":"INFO","msg":"stream: closing","id":"2sua1m59"}
+{"time":"2025-03-10T00:44:54.992898+05:30","level":"INFO","msg":"handler: closed","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:54.992922+05:30","level":"INFO","msg":"sender: closed","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:54.992917+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2sua1m59"}
+{"time":"2025-03-10T00:44:54.993179+05:30","level":"INFO","msg":"stream: closed","id":"2sua1m59"}

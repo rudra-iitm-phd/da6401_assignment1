@@ -1,0 +1,7 @@
+{"time":"2025-03-09T23:20:21.485568+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250309_232021-1sdqjapx/logs/debug-core.log"}
+{"time":"2025-03-09T23:20:21.603283+05:30","level":"INFO","msg":"created new stream","id":"1sdqjapx"}
+{"time":"2025-03-09T23:20:21.603346+05:30","level":"INFO","msg":"stream: started","id":"1sdqjapx"}
+{"time":"2025-03-09T23:20:21.603376+05:30","level":"INFO","msg":"handler: started","stream_id":"1sdqjapx"}
+{"time":"2025-03-09T23:20:21.603542+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"1sdqjapx"}
+{"time":"2025-03-09T23:20:21.603699+05:30","level":"INFO","msg":"sender: started","stream_id":"1sdqjapx"}
+{"time":"2025-03-09T23:20:21.983618+05:30","level":"INFO","msg":"Starting system monitor"}

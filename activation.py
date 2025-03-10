@@ -26,6 +26,7 @@ class ActivationFunctions:
     x = x.copy()
     z = -x
     z = z - np.max(z)
+    z = self.unit_normaliser.normalize(z)*20 - 10
     return 1/(1 + np.exp(z))
 
   def tanh(self, x):

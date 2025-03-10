@@ -1,0 +1,42 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch_size:
+  value: 420
+beta:
+  value: 1.1504172984119525
+beta1:
+  value: 0.882675040731317
+beta2:
+  value: 0.33955216300785407
+epochs:
+  value: 1798
+epsilon:
+  value: 1.489550064501893e-06
+input_size:
+  value: 452
+learning_rate:
+  value: 0.0781362317366834
+loss:
+  value: cross_entropy
+loss_function:
+  value: cross entropy
+momentum:
+  value: 0.5057382473646024
+num_layers:
+  value: 3
+optimizer:
+  value: momentum
+output_size:
+  value: 14
+wandb_entity:
+  value: da24d008-iit-madras
+wandb_project:
+  value: da24d008-assignment1
+wandb_sweep:
+  value: 'true'
+weight_decay:
+  value: 0.037801257391906984
+weight_init:
+  value: random

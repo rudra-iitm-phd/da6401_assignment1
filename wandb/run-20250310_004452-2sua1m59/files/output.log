@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "train.py", line 43, in train
+    nn, optim, loss_fn = configuration.configure(configuration_script)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/configure.py", line 29, in configure
+    assert len(script['hidden_size']) == script['num_layers']
+AssertionError

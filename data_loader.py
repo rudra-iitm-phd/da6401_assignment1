@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from keras.datasets import fashion_mnist
+import matplotlib
+matplotlib.use("Agg") 
 
 class Data:
 
@@ -66,5 +68,5 @@ class Data:
 
         i = (i+1) % 2  
         j = (j+1) % 5
-        
+
     return fig

@@ -1,0 +1,37 @@
+{"time":"2025-03-10T01:36:49.844596+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250310_013649-oxcdu1f4/logs/debug-core.log"}
+{"time":"2025-03-10T01:36:49.962528+05:30","level":"INFO","msg":"created new stream","id":"oxcdu1f4"}
+{"time":"2025-03-10T01:36:49.962586+05:30","level":"INFO","msg":"stream: started","id":"oxcdu1f4"}
+{"time":"2025-03-10T01:36:49.962594+05:30","level":"INFO","msg":"handler: started","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:36:49.96268+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:36:49.962725+05:30","level":"INFO","msg":"sender: started","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:36:50.286423+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T01:38:21.02101+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:23.150304+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:27.346891+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:36.051463+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:38.401359+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63342->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-03-10T01:38:38.401368+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63342->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-03-10T01:38:38.402024+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63342->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-03-10T01:38:40.463131+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:40.480403+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:40.620425+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:44.734055+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:44.813864+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:45.22658+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:53.404143+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:53.64906+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:54.320559+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:38:54.352083+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:39:09.823081+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:39:11.17058+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:39:12.134098+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:39:27.055624+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/oxcdu1f4/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-10T01:44:32.023348+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T01:44:32.026897+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T01:44:33.03849+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T01:44:33.036919+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.391909792,"progress":"2.5KB/2.5KB"}],"total_operations":1}}
+{"time":"2025-03-10T01:44:33.37007+05:30","level":"INFO","msg":"stream: closing","id":"oxcdu1f4"}
+{"time":"2025-03-10T01:44:33.370125+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:44:33.370307+05:30","level":"INFO","msg":"sender: closed","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:44:33.370338+05:30","level":"INFO","msg":"handler: closed","stream_id":"oxcdu1f4"}
+{"time":"2025-03-10T01:44:33.370369+05:30","level":"INFO","msg":"stream: closed","id":"oxcdu1f4"}

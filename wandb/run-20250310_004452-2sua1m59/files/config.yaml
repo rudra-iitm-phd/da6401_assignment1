@@ -1,0 +1,70 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.8.16
+        t:
+            "1":
+                - 2
+                - 3
+                - 55
+            "2":
+                - 2
+                - 3
+                - 55
+            "3":
+                - 2
+                - 13
+                - 14
+                - 16
+                - 23
+                - 55
+            "4": 3.8.16
+            "5": 0.19.8
+            "8":
+                - 2
+                - 5
+            "12": 0.19.8
+            "13": darwin-arm64
+activation:
+    value: relu
+batch_size:
+    value: 256
+beta:
+    value: 0.5
+beta1:
+    value: 0.8923226395005625
+beta2:
+    value: 0.9385188006027132
+epochs:
+    value: 500
+epsilon:
+    value: 1e-06
+hidden_size:
+    value:
+        - 512
+        - 256
+input_size:
+    value: 784
+learning_rate:
+    value: 0.0030763179173077474
+loss:
+    value: cross_entropy
+momentum:
+    value: 0.9053057713315584
+num_layers:
+    value: 1
+optimizer:
+    value: adam
+output_size:
+    value: 10
+wandb_entity:
+    value: da24d008-iit-madras
+wandb_project:
+    value: da24d008-assignment1
+wandb_sweep:
+    value: true
+weight_decay:
+    value: 0.0007238986023261804
+weight_init:
+    value: random

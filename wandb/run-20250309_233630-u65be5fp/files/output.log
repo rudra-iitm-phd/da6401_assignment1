@@ -1,0 +1,41 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (1024, 784)
+bias : (1024, 1)
+activation : relu
+---------------------------------------
+hidden1
+weights : (512, 1024)
+bias : (512, 1)
+activation : relu
+---------------------------------------
+hidden2
+weights : (256, 512)
+bias : (256, 1)
+activation : relu
+---------------------------------------
+output3
+weights : (10, 256)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 1462538
+Loss : 4.48      Train accuracy : 9.82      Validation accuracy : 9.91
+-------------------------------------------------------------------------------------
+Loss : 1.04      Train accuracy : 55.27      Validation accuracy : 53.53
+-------------------------------------------------------------------------------------
+Loss : 0.57      Train accuracy : 69.68      Validation accuracy : 67.02
+-------------------------------------------------------------------------------------
+Loss : 0.43      Train accuracy : 75.27      Validation accuracy : 71.83
+-------------------------------------------------------------------------------------
+Loss : 0.35      Train accuracy : 78.25      Validation accuracy : 74.24
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Traceback (most recent call last):
+  File "train.py", line 47, in train
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    updated_params = optim.update(params, grads)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 229, in update
+    self.prev_moments[block][layer] =  self.beta1 * self.prev_moments[block][layer] + (1 - self.beta1) * grads[block][layer]
+Exception
