@@ -20,8 +20,8 @@ class OptimizerConfig:
                   weight_decay = args['weight_decay']
             else: weight_decay = 0
 
-            if optim == GradientDescent:
-                  return GradientDescent(args['lr'], weight_decay = weight_decay)
+            if optim == StochasticGradientDescent:
+                  return StochasticGradientDescent(args['lr'], weight_decay = weight_decay)
                   
             elif optim == MomentumGradientDescent:
                   if 'momentum' not in args.keys():
@@ -45,7 +45,7 @@ class OptimizerConfig:
 
 
 
-class GradientDescent(Optimizer):
+class StochasticGradientDescent(Optimizer):
       def __init__(self, learning_rate, weight_decay = 0):
             # params = params
             self.lr = learning_rate
@@ -110,7 +110,7 @@ class NAG(Optimizer):
             if self.t == 0:
                   self.prev_update = {block:{layer:np.zeros_like(params[block][layer]) if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
                   
-            lookahead_params = {block:{layer:params[block][layer] - self.beta * self.prev_update[block][layer] if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+            lookahead_params = {block:{layer:params[block][layer] - self.momentum * self.prev_update[block][layer] if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
 
             _, logits = self.forward(x)
             self.loss_fn.compute(logits, y)

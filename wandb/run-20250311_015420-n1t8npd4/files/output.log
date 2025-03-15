@@ -1,0 +1,53 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (1024, 784)
+bias : (1024, 1)
+activation : sigmoid
+---------------------------------------
+hidden1
+weights : (512, 1024)
+bias : (512, 1)
+activation : sigmoid
+---------------------------------------
+hidden2
+weights : (256, 512)
+bias : (256, 1)
+activation : sigmoid
+---------------------------------------
+output3
+weights : (10, 256)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 1462538
+Loss : 4.65      Train accuracy : 10.7      Validation accuracy : 10.36      Test Accuracy : 10.6
+-------------------------------------------------------------------------------------
+Loss : 3.64      Train accuracy : 11.95      Validation accuracy : 11.49      Test Accuracy : 11.3
+-------------------------------------------------------------------------------------
+Loss : 3.26      Train accuracy : 9.83      Validation accuracy : 9.46      Test Accuracy : 9.57
+-------------------------------------------------------------------------------------
+Loss : 3.65      Train accuracy : 11.65      Validation accuracy : 11.48      Test Accuracy : 11.58
+-------------------------------------------------------------------------------------
+Loss : 3.59      Train accuracy : 12.35      Validation accuracy : 12.13      Test Accuracy : 12.09
+-------------------------------------------------------------------------------------
+Loss : 3.52      Train accuracy : 13.0      Validation accuracy : 12.72      Test Accuracy : 12.6
+-------------------------------------------------------------------------------------
+Loss : 3.45      Train accuracy : 13.6      Validation accuracy : 13.29      Test Accuracy : 13.21
+-------------------------------------------------------------------------------------
+Loss : 3.38      Train accuracy : 14.37      Validation accuracy : 13.79      Test Accuracy : 13.66
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Network error (ConnectionError), entering retry loop.
+Loss : 3.32      Train accuracy : 14.92      Validation accuracy : 14.36      Test Accuracy : 14.23
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Network error (ConnectionError), entering retry loop.
+Loss : 3.26      Train accuracy : 15.27      Validation accuracy : 15.09      Test Accuracy : 14.78
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Network error (ConnectionError), entering retry loop.
+Loss : 3.21      Train accuracy : 15.87      Validation accuracy : 15.46      Test Accuracy : 15.14
+-------------------------------------------------------------------------------------
+Loss : 3.15      Train accuracy : 16.83      Validation accuracy : 16.25      Test Accuracy : 16.06
+-------------------------------------------------------------------------------------
+Loss : 3.11      Train accuracy : 17.02      Validation accuracy : 16.71      Test Accuracy : 16.35
+-------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

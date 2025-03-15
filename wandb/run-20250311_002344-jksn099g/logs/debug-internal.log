@@ -5,3 +5,12 @@
 {"time":"2025-03-11T00:23:44.83936+05:30","level":"INFO","msg":"sender: started","stream_id":"jksn099g"}
 {"time":"2025-03-11T00:23:44.839387+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jksn099g"}
 {"time":"2025-03-11T00:23:45.218653+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-11T00:57:40.031978+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-11T00:57:40.035737+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-11T00:57:41.0881+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.335639625,"progress":"2.6KB/2.6KB"}],"total_operations":1}}
+{"time":"2025-03-11T00:57:41.099226+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-11T00:57:41.456124+05:30","level":"INFO","msg":"stream: closing","id":"jksn099g"}
+{"time":"2025-03-11T00:57:41.456161+05:30","level":"INFO","msg":"handler: closed","stream_id":"jksn099g"}
+{"time":"2025-03-11T00:57:41.456175+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jksn099g"}
+{"time":"2025-03-11T00:57:41.456217+05:30","level":"INFO","msg":"sender: closed","stream_id":"jksn099g"}
+{"time":"2025-03-11T00:57:41.456753+05:30","level":"INFO","msg":"stream: closed","id":"jksn099g"}

@@ -1,6 +1,6 @@
 from neural_network import NeuralNetwork
 from loss_functions import CrossEntropy, MeanSquaredError
-from optimizer import GradientDescent, MomentumGradientDescent, NAG, Adagrad, RMSProp, Adam
+from optimizer import StochasticGradientDescent, MomentumGradientDescent, NAG, Adagrad, RMSProp, Adam
 
 
 class Configure:
@@ -42,7 +42,7 @@ class Configure:
             self.weight_init = script['weight_init']
             self.optimizer_dict = {
                   "momentum": MomentumGradientDescent,
-                  "vanilla":GradientDescent,
+                  "sgd":StochasticGradientDescent,
                   "nag":NAG,
                   'adagrad':Adagrad,
                   'rmsprop': RMSProp,

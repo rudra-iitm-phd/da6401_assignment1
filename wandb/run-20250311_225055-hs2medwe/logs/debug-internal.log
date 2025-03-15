@@ -1,0 +1,22 @@
+{"time":"2025-03-11T22:50:55.149643+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250311_225055-hs2medwe/logs/debug-core.log"}
+{"time":"2025-03-11T22:50:55.262106+05:30","level":"INFO","msg":"created new stream","id":"hs2medwe"}
+{"time":"2025-03-11T22:50:55.262147+05:30","level":"INFO","msg":"stream: started","id":"hs2medwe"}
+{"time":"2025-03-11T22:50:55.262166+05:30","level":"INFO","msg":"handler: started","stream_id":"hs2medwe"}
+{"time":"2025-03-11T22:50:55.262245+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"hs2medwe"}
+{"time":"2025-03-11T22:50:55.262535+05:30","level":"INFO","msg":"sender: started","stream_id":"hs2medwe"}
+{"time":"2025-03-11T22:50:55.650192+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-11T23:03:41.465838+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:04:58.986391+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:06:18.028987+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:07:42.688723+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:09:16.745872+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:11:11.289335+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/hs2medwe/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-11T23:50:53.402012+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-11T23:50:53.406457+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-11T23:50:54.465496+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.162697042,"progress":"2.6KB/2.6KB"}],"total_operations":1}}
+{"time":"2025-03-11T23:50:54.645502+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-11T23:50:54.97061+05:30","level":"INFO","msg":"stream: closing","id":"hs2medwe"}
+{"time":"2025-03-11T23:50:54.970676+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"hs2medwe"}
+{"time":"2025-03-11T23:50:54.970845+05:30","level":"INFO","msg":"handler: closed","stream_id":"hs2medwe"}
+{"time":"2025-03-11T23:50:54.970868+05:30","level":"INFO","msg":"sender: closed","stream_id":"hs2medwe"}
+{"time":"2025-03-11T23:50:54.970894+05:30","level":"INFO","msg":"stream: closed","id":"hs2medwe"}

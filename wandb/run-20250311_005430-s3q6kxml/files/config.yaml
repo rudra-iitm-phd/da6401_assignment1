@@ -1,0 +1,106 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.8.16
+        t:
+            "1":
+                - 2
+                - 3
+                - 55
+            "2":
+                - 2
+                - 3
+                - 55
+            "3":
+                - 2
+                - 13
+                - 14
+                - 16
+                - 23
+                - 55
+            "4": 3.8.16
+            "5": 0.19.8
+            "8":
+                - 2
+                - 5
+            "12": 0.19.8
+            "13": darwin-arm64
+        visualize:
+            Confusion matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Confusion Matrix Curve
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: Confusion matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+activation:
+    value: sigmoid
+batch_size:
+    value: 512
+beta:
+    value: 0.5
+beta1:
+    value: 0.888465413364186
+beta2:
+    value: 0.9358677789547084
+epochs:
+    value: 400
+epsilon:
+    value: 1e-06
+hidden_size:
+    value:
+        - 1024
+        - 512
+        - 256
+input_size:
+    value: 784
+learning_rate:
+    value: 0.00018966915752920984
+loss:
+    value: cross_entropy
+momentum:
+    value: 0.7502347571324064
+num_layers:
+    value: 2
+optimizer:
+    value: momentum
+output_size:
+    value: 10
+sweep_id:
+    value: da24d008-assignment1/942fddeq
+sweep_name:
+    value: epochs-400_batch_size-512_loss-cross_entropy_optimizer-momentum_learning_rate-0.00018966915752920984_weight_init-xavier_hidden_size-[1024, 512, 256]_num_layers-2_beta-0.5_activation-sigmoid_weight_decay-0.0008244661346672961_beta1-0.888465413364186_beta2-0.9358677789547084_epsilon-1e-06_momentum-0.7502347571324064_wandb_sweep-True_sweep_id-da24d008-assignment1/942fddeq
+wandb_entity:
+    value: da24d008-iit-madras
+wandb_project:
+    value: da24d008-assignment1
+wandb_sweep:
+    value: true
+weight_decay:
+    value: 0.0008244661346672961
+weight_init:
+    value: xavier

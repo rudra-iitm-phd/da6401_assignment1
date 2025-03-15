@@ -30,11 +30,11 @@ class Trainer:
             loss = loss_fn()
             acc = acc_metrics()
 
-            max_iter = 1000
+            max_iter = 100
 
             for epoch in range(epochs):
 
-                  for iter in range(int(len(self.X_train)/batch_size)):
+                  for iter in range(len(self.X_train)//batch_size):
 
                         if iter > max_iter :
                               break
@@ -61,6 +61,7 @@ class Trainer:
                         val_accuracy = acc.compute(nn.infer(self.X_val, False), self.y_val)
                         test_accuracy = acc.compute(nn.infer(self.X_test, False), self.y_test)
                         self.verbosity(train_loss, train_accuracy, val_accuracy, test_accuracy)
+                        
                         self.logger.log({ 
                               "Accuracy": round(test_accuracy, 2),
                               "Validation Accuracy" : round(val_accuracy, 2),
@@ -81,7 +82,7 @@ class Trainer:
 
       def verbosity(self, train_loss, train_accuracy, val_accuracy, test_accuracy):
             print(f'Loss : {round(train_loss, 2)}      Train accuracy : {round(train_accuracy, 2)}      Validation accuracy : {round(val_accuracy, 2)}      Test Accuracy : {round(test_accuracy, 2)}')
-            print('-------------------------------------------------------------------------------------')
+            print('---------------------------------------------------------------------------------------------------------')
             
 
 

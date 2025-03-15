@@ -1,0 +1,78 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (512, 784)
+bias : (512, 1)
+activation : sigmoid
+---------------------------------------
+hidden1
+weights : (256, 512)
+bias : (256, 1)
+activation : sigmoid
+---------------------------------------
+output2
+weights : (10, 256)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 535818
+Loss : 3.78      Train accuracy : 16.3      Validation accuracy : 15.94      Test Accuracy : 15.96
+-------------------------------------------------------------------------------------
+Loss : 3.57      Train accuracy : 16.75      Validation accuracy : 15.76      Test Accuracy : 16.0
+-------------------------------------------------------------------------------------
+Loss : 3.58      Train accuracy : 16.57      Validation accuracy : 15.46      Test Accuracy : 15.7
+-------------------------------------------------------------------------------------
+Loss : 3.63      Train accuracy : 16.53      Validation accuracy : 15.66      Test Accuracy : 15.92
+-------------------------------------------------------------------------------------
+Loss : 3.63      Train accuracy : 16.78      Validation accuracy : 16.06      Test Accuracy : 16.38
+-------------------------------------------------------------------------------------
+Loss : 3.58      Train accuracy : 17.82      Validation accuracy : 16.69      Test Accuracy : 17.16
+-------------------------------------------------------------------------------------
+Loss : 3.51      Train accuracy : 18.42      Validation accuracy : 17.44      Test Accuracy : 17.73
+-------------------------------------------------------------------------------------
+Loss : 3.46      Train accuracy : 18.8      Validation accuracy : 18.16      Test Accuracy : 18.31
+-------------------------------------------------------------------------------------
+Loss : 3.42      Train accuracy : 19.08      Validation accuracy : 18.74      Test Accuracy : 18.9
+-------------------------------------------------------------------------------------
+Loss : 3.37      Train accuracy : 19.7      Validation accuracy : 19.23      Test Accuracy : 19.48
+-------------------------------------------------------------------------------------
+Loss : 3.33      Train accuracy : 20.13      Validation accuracy : 19.77      Test Accuracy : 19.91
+-------------------------------------------------------------------------------------
+Loss : 3.28      Train accuracy : 20.75      Validation accuracy : 20.21      Test Accuracy : 20.57
+-------------------------------------------------------------------------------------
+Loss : 3.23      Train accuracy : 21.58      Validation accuracy : 20.73      Test Accuracy : 21.15
+-------------------------------------------------------------------------------------
+Loss : 3.19      Train accuracy : 21.85      Validation accuracy : 21.27      Test Accuracy : 21.64
+-------------------------------------------------------------------------------------
+Loss : 3.14      Train accuracy : 22.27      Validation accuracy : 21.78      Test Accuracy : 22.04
+-------------------------------------------------------------------------------------
+Loss : 3.1      Train accuracy : 22.73      Validation accuracy : 22.3      Test Accuracy : 22.49
+-------------------------------------------------------------------------------------
+Loss : 3.05      Train accuracy : 23.23      Validation accuracy : 22.78      Test Accuracy : 22.96
+-------------------------------------------------------------------------------------
+Loss : 3.01      Train accuracy : 23.87      Validation accuracy : 23.24      Test Accuracy : 23.42
+-------------------------------------------------------------------------------------
+Loss : 2.97      Train accuracy : 24.52      Validation accuracy : 23.71      Test Accuracy : 23.85
+-------------------------------------------------------------------------------------
+Loss : 2.93      Train accuracy : 24.95      Validation accuracy : 24.19      Test Accuracy : 24.3
+-------------------------------------------------------------------------------------
+Loss : 2.89      Train accuracy : 25.42      Validation accuracy : 24.63      Test Accuracy : 24.77
+-------------------------------------------------------------------------------------
+Loss : 2.85      Train accuracy : 25.95      Validation accuracy : 25.08      Test Accuracy : 25.16
+-------------------------------------------------------------------------------------
+Loss : 2.81      Train accuracy : 26.58      Validation accuracy : 25.52      Test Accuracy : 25.53
+-------------------------------------------------------------------------------------
+Loss : 2.78      Train accuracy : 27.13      Validation accuracy : 26.02      Test Accuracy : 26.13
+-------------------------------------------------------------------------------------
+Loss : 2.74      Train accuracy : 27.38      Validation accuracy : 26.39      Test Accuracy : 26.62
+-------------------------------------------------------------------------------------
+Loss : 2.71      Train accuracy : 28.02      Validation accuracy : 26.74      Test Accuracy : 27.2
+-------------------------------------------------------------------------------------
+Loss : 2.67      Train accuracy : 28.3      Validation accuracy : 27.16      Test Accuracy : 27.39
+-------------------------------------------------------------------------------------
+Loss : 2.64      Train accuracy : 28.82      Validation accuracy : 27.56      Test Accuracy : 27.79
+-------------------------------------------------------------------------------------
+Loss : 2.61      Train accuracy : 29.38      Validation accuracy : 28.06      Test Accuracy : 28.2
+-------------------------------------------------------------------------------------
+Loss : 2.58      Train accuracy : 29.7      Validation accuracy : 28.45      Test Accuracy : 28.54
+-------------------------------------------------------------------------------------

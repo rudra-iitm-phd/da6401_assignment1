@@ -1,0 +1,22 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : sigmoid
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 0.15      Train accuracy : 12.75      Validation accuracy : 12.31      Test Accuracy : 11.94
+---------------------------------------------------------------------------------------------------------
+Loss : 0.07      Train accuracy : 51.85      Validation accuracy : 50.94      Test Accuracy : 50.69
+---------------------------------------------------------------------------------------------------------
+Loss : 0.06      Train accuracy : 54.0      Validation accuracy : 53.21      Test Accuracy : 52.49
+---------------------------------------------------------------------------------------------------------
+Loss : 0.06      Train accuracy : 64.88      Validation accuracy : 62.29      Test Accuracy : 61.61
+---------------------------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.

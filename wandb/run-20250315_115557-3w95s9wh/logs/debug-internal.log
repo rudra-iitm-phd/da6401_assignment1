@@ -1,0 +1,16 @@
+{"time":"2025-03-15T11:55:57.21358+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_115557-3w95s9wh/logs/debug-core.log"}
+{"time":"2025-03-15T11:55:57.326721+05:30","level":"INFO","msg":"created new stream","id":"3w95s9wh"}
+{"time":"2025-03-15T11:55:57.326801+05:30","level":"INFO","msg":"stream: started","id":"3w95s9wh"}
+{"time":"2025-03-15T11:55:57.326855+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:55:57.326869+05:30","level":"INFO","msg":"handler: started","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:55:57.326941+05:30","level":"INFO","msg":"sender: started","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:55:57.66167+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T11:55:58.696804+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T11:55:58.697281+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T11:55:59.708309+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/Sample images from each class_0_ff4d96ef1b7db4d788f9.png","runtime_seconds":0.720690333,"progress":"50.7KB/50.7KB"},{"desc":"uploading output.log","runtime_seconds":0.720672833,"progress":"2.3KB/2.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.720665334,"progress":"354B/354B"},{"desc":"uploading config.yaml","runtime_seconds":0.356149584,"progress":"1.3KB/1.3KB"}],"total_operations":4}}
+{"time":"2025-03-15T11:56:00.563299+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T11:56:00.956565+05:30","level":"INFO","msg":"stream: closing","id":"3w95s9wh"}
+{"time":"2025-03-15T11:56:00.956624+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:56:00.956646+05:30","level":"INFO","msg":"sender: closed","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:56:00.956894+05:30","level":"INFO","msg":"handler: closed","stream_id":"3w95s9wh"}
+{"time":"2025-03-15T11:56:00.956921+05:30","level":"INFO","msg":"stream: closed","id":"3w95s9wh"}

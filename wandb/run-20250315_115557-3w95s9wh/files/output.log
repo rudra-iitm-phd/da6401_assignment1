@@ -1,0 +1,35 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (32, 784)
+bias : (32, 1)
+activation : sigmoid
+---------------------------------------
+hidden1
+weights : (64, 32)
+bias : (64, 1)
+activation : sigmoid
+---------------------------------------
+hidden2
+weights : (128, 64)
+bias : (128, 1)
+activation : sigmoid
+---------------------------------------
+output3
+weights : (10, 128)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 36842
+Traceback (most recent call last):
+  File "train.py", line 40, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 54, in learn
+    updated_params = optim.update(params, grads)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 113, in update
+    lookahead_params = {block:{layer:params[block][layer] - self.beta * self.prev_update[block][layer] if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 113, in <dictcomp>
+    lookahead_params = {block:{layer:params[block][layer] - self.beta * self.prev_update[block][layer] if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 113, in <dictcomp>
+    lookahead_params = {block:{layer:params[block][layer] - self.beta * self.prev_update[block][layer] if layer!= 'h' else 0 for layer in list(params[block].keys())} for block in list(params.keys()) }
+AttributeError: 'NAG' object has no attribute 'beta'

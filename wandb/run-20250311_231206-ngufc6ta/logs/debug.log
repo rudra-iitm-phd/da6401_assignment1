@@ -1,0 +1,30 @@
+2025-03-11 23:12:06,291 INFO    Thread-6  :48236 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_setup.py:_flush():67] Configure stats pid to 48236
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/settings
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250311_231206-ngufc6ta/logs/debug.log
+2025-03-11 23:12:06,292 INFO    Thread-6  :48236 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250311_231206-ngufc6ta/logs/debug-internal.log
+2025-03-11 23:12:06,293 INFO    Thread-6  :48236 [wandb_init.py:init():761] calling init triggers
+2025-03-11 23:12:06,293 INFO    Thread-6  :48236 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 512, 'beta1': 0.8908785238912076, 'beta2': 0.9172430036582307, 'epochs': 400, 'hidden_size': [784, 10], 'learning_rate': 0.01978976732171271, 'loss': 'cross_entropy', 'momentum': 0.5486796729633988, 'optimizer': 'nag', 'weight_decay': 0.0008227860897107873, 'weight_init': 'xavier'}
+config: {'epochs': 400, 'batch_size': 1024, 'loss': 'mean_squared_error', 'optimizer': 'momentum', 'learning_rate': 0.00043666145058563746, 'weight_init': 'xavier', 'hidden_size': [512, 256], 'num_layers': 2, 'input_size': 784, 'output_size': 10, 'beta': 0.5, 'activation': 'relu', 'weight_decay': 0.0008959693436233005, 'beta1': 0.9117627901860552, 'beta2': 0.9137022743372882, 'epsilon': 1e-06, 'momentum': 0.7143414513822697, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'da24d008-assignment1', 'wandb_sweep': True, 'sweep_id': 'da24d008-assignment1/942fddeq', '_wandb': {}}
+2025-03-11 23:12:06,293 INFO    Thread-6  :48236 [wandb_init.py:init():784] starting backend
+2025-03-11 23:12:06,293 INFO    Thread-6  :48236 [wandb_init.py:init():788] sending inform_init request
+2025-03-11 23:12:06,328 INFO    Thread-6  :48236 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-03-11 23:12:06,328 INFO    Thread-6  :48236 [wandb_init.py:init():798] backend started and connected
+2025-03-11 23:12:06,332 INFO    Thread-6  :48236 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'relu', 'batch_size': 512, 'beta1': 0.8908785238912076, 'beta2': 0.9172430036582307, 'epochs': 400, 'hidden_size': [784, 10], 'learning_rate': 0.01978976732171271, 'loss': 'cross_entropy', 'momentum': 0.5486796729633988, 'optimizer': 'nag', 'weight_decay': 0.0008227860897107873, 'weight_init': 'xavier'}
+2025-03-11 23:12:06,524 INFO    Thread-6  :48236 [wandb_init.py:init():891] updated telemetry
+2025-03-11 23:12:06,593 INFO    Thread-6  :48236 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-11 23:12:07,071 INFO    Thread-6  :48236 [wandb_init.py:init():990] starting run threads in backend
+2025-03-11 23:12:08,512 INFO    Thread-6  :48236 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-11 23:12:08,514 INFO    Thread-6  :48236 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-11 23:12:08,514 INFO    Thread-6  :48236 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-11 23:12:08,517 INFO    Thread-6  :48236 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-11 23:12:08,522 INFO    Thread-6  :48236 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-11 23:12:10,948 INFO    Thread-6  :48236 [wandb_run.py:_finish():2112] finishing run da24d008-iit-madras/da24d008-assignment1/ngufc6ta
+2025-03-11 23:12:10,949 INFO    Thread-6  :48236 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-11 23:12:10,949 INFO    Thread-6  :48236 [wandb_run.py:_restore():2322] restore
+2025-03-11 23:12:10,949 INFO    Thread-6  :48236 [wandb_run.py:_restore():2328] restore done
+2025-03-11 23:12:12,397 INFO    Thread-6  :48236 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-11 23:12:12,398 INFO    Thread-6  :48236 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-11 23:12:12,398 INFO    Thread-6  :48236 [wandb_run.py:_footer_sync_info():3917] logging synced files

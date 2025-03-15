@@ -1,0 +1,58 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (512, 784)
+bias : (512, 1)
+activation : relu
+---------------------------------------
+hidden1
+weights : (256, 512)
+bias : (256, 1)
+activation : relu
+---------------------------------------
+output2
+weights : (10, 256)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 535818
+Loss : 3.75      Train accuracy : 9.1      Validation accuracy : 8.93      Test Accuracy : 8.64
+-------------------------------------------------------------------------------------
+Loss : 2.16      Train accuracy : 29.55      Validation accuracy : 29.19      Test Accuracy : 28.96
+-------------------------------------------------------------------------------------
+Loss : 1.59      Train accuracy : 40.15      Validation accuracy : 40.09      Test Accuracy : 39.32
+-------------------------------------------------------------------------------------
+Loss : 1.33      Train accuracy : 46.5      Validation accuracy : 46.04      Test Accuracy : 45.12
+-------------------------------------------------------------------------------------
+Loss : 1.17      Train accuracy : 51.17      Validation accuracy : 49.98      Test Accuracy : 48.81
+-------------------------------------------------------------------------------------
+Loss : 1.06      Train accuracy : 54.1      Validation accuracy : 52.69      Test Accuracy : 51.5
+-------------------------------------------------------------------------------------
+Loss : 0.98      Train accuracy : 56.12      Validation accuracy : 54.73      Test Accuracy : 53.52
+-------------------------------------------------------------------------------------
+Loss : 0.91      Train accuracy : 57.92      Validation accuracy : 56.32      Test Accuracy : 55.44
+-------------------------------------------------------------------------------------
+Loss : 0.86      Train accuracy : 59.53      Validation accuracy : 57.66      Test Accuracy : 56.83
+-------------------------------------------------------------------------------------
+Loss : 0.82      Train accuracy : 60.88      Validation accuracy : 59.01      Test Accuracy : 58.25
+-------------------------------------------------------------------------------------
+Loss : 0.78      Train accuracy : 62.05      Validation accuracy : 59.97      Test Accuracy : 59.58
+-------------------------------------------------------------------------------------
+Loss : 0.75      Train accuracy : 63.43      Validation accuracy : 60.91      Test Accuracy : 60.69
+-------------------------------------------------------------------------------------
+Loss : 0.72      Train accuracy : 64.23      Validation accuracy : 61.82      Test Accuracy : 61.5
+-------------------------------------------------------------------------------------
+Loss : 0.69      Train accuracy : 65.05      Validation accuracy : 62.66      Test Accuracy : 62.34
+-------------------------------------------------------------------------------------
+Loss : 0.67      Train accuracy : 65.67      Validation accuracy : 63.5      Test Accuracy : 63.14
+-------------------------------------------------------------------------------------
+Loss : 0.64      Train accuracy : 66.47      Validation accuracy : 64.02      Test Accuracy : 63.75
+-------------------------------------------------------------------------------------
+Loss : 0.63      Train accuracy : 67.07      Validation accuracy : 64.74      Test Accuracy : 64.53
+-------------------------------------------------------------------------------------
+Loss : 0.61      Train accuracy : 67.62      Validation accuracy : 65.18      Test Accuracy : 64.84
+-------------------------------------------------------------------------------------
+Loss : 0.59      Train accuracy : 68.12      Validation accuracy : 65.78      Test Accuracy : 65.54
+-------------------------------------------------------------------------------------
+Loss : 0.58      Train accuracy : 68.57      Validation accuracy : 66.29      Test Accuracy : 65.96
+-------------------------------------------------------------------------------------

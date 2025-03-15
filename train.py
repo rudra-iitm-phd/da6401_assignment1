@@ -1,7 +1,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 import matplotlib
-from data_loader import Data
+from data_loader import FashionMNISTData, MNISTData
 from configure import Configure
 import wandb
 from trainer import Trainer
@@ -10,13 +10,16 @@ from argument_parser import parser
 import sweep_configuration 
 matplotlib.use("Agg") 
 
-# wandb.login(key = "f7cc061a6cf1c6d4f2791a84e81d1d16ee8adc8b")
+wandb.login(key = "f7cc061a6cf1c6d4f2791a84e81d1d16ee8adc8b")
 
-
+Datasets = {
+      'mnist':MNISTData,
+      'fashion_mnist':FashionMNISTData
+}
 
 
 def create_name(configuration:dict):
-      l = [f'{k}-{v}' for k,v in configuration.items() if k not in ['input_size', 'output_size', 'wandb_entity', 'wandb_project']]
+      l = [f'{k}-{v}' for k,v in configuration.items() if k not in ['input_size', 'output_size', 'wandb_entity', 'wandb_project', 'wandb_sweep', 'sweep_id', 'dataset']]
       return '_'.join(l)
 
 def train():
@@ -40,12 +43,13 @@ def train():
 
 if __name__ == "__main__":
 
-      data = Data(0.1)
+      args = parser.parse_args()
+
+      data = Datasets[args.dataset.lower()](0.1)
+
       (X_train, y_train), (X_val, y_val), (X_test, y_test) = data.load_data(0.1)
 
       configuration = Configure()
-
-      args = parser.parse_args()
       args.num_layers = len(args.hidden_size)
 
       print(args)

@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from keras.datasets import fashion_mnist
+from keras.datasets import fashion_mnist, mnist
 import matplotlib
 matplotlib.use("Agg") 
 
-class Data:
+class FashionMNISTData:
 
   def __init__(self, frac=1):
 
@@ -36,7 +36,7 @@ class Data:
 
   def partition_data(self, X : np.ndarray, y:np.ndarray, frac:float):
 
-    # helper function to partition data into (1-frac)*100 % and frac * 100 %
+    # helper function to partition data into (1-frac) * 100 % and frac * 100 %
     return (X[ : int(frac * X.shape[0]) ], y[ : int(frac * X.shape[0]) ]), (X[int( frac* X.shape[0]) : ], y[ int(frac * X.shape[0]) : ])
 
   def display_sample(self, k=10):
@@ -70,3 +70,32 @@ class Data:
         j = (j+1) % 5
 
     return fig
+
+
+class MNISTData(FashionMNISTData):
+  def __init__(self, *args, **kwargs):
+    super().__init__(*args, **kwargs)
+    self.classes = {
+        0	: "0",
+        1	: "1",
+        2	: "2",
+        3	: "3",
+        4	: "4",
+        5	: "5",
+        6	: "6",
+        7	: "7",
+        8	: "8",
+        9	: "9"
+    }
+
+  def load_data(self, frac=1):
+    # using the keras fashion mnist to retrieve the train and test data
+    (self.X_train, self.y_train) , (self.X_test, self.y_test) = mnist.load_data()
+
+    #using the helper function to partition the training dataset into train and validation
+
+    (self.X_train, self.y_train) , (self.X_val, self.y_val) = self.partition_data(self.X_train, self.y_train, frac)
+
+    return (self.X_train, self.y_train), (self.X_val, self.y_val), (self.X_test, self.y_test)
+
+

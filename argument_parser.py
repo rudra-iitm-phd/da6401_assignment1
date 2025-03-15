@@ -83,3 +83,5 @@ parser.add_argument('-wp', '--wandb_project',
 parser.add_argument('--wandb_sweep', action='store_true', help='Enable W&B sweep')
 
 parser.add_argument('--sweep_id', type = str, help = "Sweep ID", default = None)
+
+parser.add_argument('-d', '--dataset', type = str, default = 'fashion_mnist', help = 'Dataset choices: ["mnist", "fashion_mnist"]')
