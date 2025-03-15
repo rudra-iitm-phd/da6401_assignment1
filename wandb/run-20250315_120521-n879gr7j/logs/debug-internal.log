@@ -5,3 +5,14 @@
 {"time":"2025-03-15T12:05:21.826083+05:30","level":"INFO","msg":"sender: started","stream_id":"n879gr7j"}
 {"time":"2025-03-15T12:05:21.826148+05:30","level":"INFO","msg":"handler: started","stream_id":"n879gr7j"}
 {"time":"2025-03-15T12:05:22.123683+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T12:08:07.88605+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/n879gr7j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T12:08:10.288968+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/n879gr7j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T12:09:25.594393+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T12:09:25.596736+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T12:09:26.603732+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":37.829835167,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":1.130557292,"progress":"141.0KB/141.0KB"}]},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":35.36012525},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":32.80913175},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":30.262757625},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":27.693457333},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":25.128443708},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":22.501645625},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":19.99681425},{"desc":"uploading artifact run-n879gr7j-ConfusionMatrixTable","runtime_seconds":17.549189667},{"desc":"uploading artifact run-n879gr7j-Confusionmatrix_table","runtime_seconds":15.251354625}],"total_operations":21}}
+{"time":"2025-03-15T12:10:15.818672+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T12:10:16.128471+05:30","level":"INFO","msg":"stream: closing","id":"n879gr7j"}
+{"time":"2025-03-15T12:10:16.128531+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"n879gr7j"}
+{"time":"2025-03-15T12:10:16.12875+05:30","level":"INFO","msg":"handler: closed","stream_id":"n879gr7j"}
+{"time":"2025-03-15T12:10:16.12872+05:30","level":"INFO","msg":"sender: closed","stream_id":"n879gr7j"}
+{"time":"2025-03-15T12:10:16.129057+05:30","level":"INFO","msg":"stream: closed","id":"n879gr7j"}

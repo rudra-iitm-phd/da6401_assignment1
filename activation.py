@@ -17,6 +17,8 @@ class ActivationFunctions:
       return self.tanh
     elif name == 'softmax':
       return self.softmax
+    elif name == 'identity':
+      return self.identity
 
   def relu(self, x):
     x = x.copy()
@@ -31,6 +33,8 @@ class ActivationFunctions:
 
   def tanh(self, x):
     x = x.copy()
+    x = x - np.max(x)
+    x = self.unit_normaliser.normalize(x)*20 - 10
     return (np.exp(x) - np.exp(-x))/(np.exp(x) + np.exp(-x))
 
   def softmax(self, x):
@@ -38,3 +42,7 @@ class ActivationFunctions:
     x = x - np.max(x) 
     x = self.unit_normaliser.normalize(x)*20 - 10
     return np.exp(x) / sum(np.exp(x))
+
+  def identity(self, x):
+    x = x.copy()
+    return x

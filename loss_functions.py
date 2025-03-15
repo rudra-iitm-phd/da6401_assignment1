@@ -20,13 +20,9 @@ class CrossEntropy(LossFunction):
             # self.nn = nn
             # params = nn.params
             self.activation_functions = ActivationFunctions()
-            self.activations = {f : self.activation_functions.get(f) for f in ['sigmoid', 'relu', 'tanh', 'softmax']}
+            self.activations = {f : self.activation_functions.get(f) for f in ['sigmoid', 'relu', 'tanh', 'softmax', 'identity']}
             self.pred_logits = None
             self.unit_normaliser = unit_normalise()
-
-
-            
-            
 
       def compute(self, pred_logits:np.ndarray, true_classes:np.ndarray):
             
@@ -105,6 +101,10 @@ class CrossEntropy(LossFunction):
                   return x>0
             elif activation == 'sigmoid':
                   return np.multiply(self.activations['sigmoid'](x), (1 - self.activations['sigmoid'](x)))
+            elif activation == 'identity':
+                  return np.ones_like(x)
+            elif activation == 'tanh':
+                  return np.ones_like(x) - np.power(self.activations['tanh'](x), 2)
 
 
 class MeanSquaredError(LossFunction):
@@ -158,7 +158,6 @@ class MeanSquaredError(LossFunction):
 
                                     grads[block][layer] = -(e_l - self.pred_logits)*2
                                     
-
                               elif layer == 'a':
 
                                     grads[block]['a'] = np.multiply(grads[block]['o'], self.pred_logits)*2

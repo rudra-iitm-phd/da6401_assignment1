@@ -61,7 +61,7 @@ class Trainer:
                         val_accuracy = acc.compute(nn.infer(self.X_val, False), self.y_val)
                         test_accuracy = acc.compute(nn.infer(self.X_test, False), self.y_test)
                         self.verbosity(train_loss, train_accuracy, val_accuracy, test_accuracy)
-                        
+
                         self.logger.log({ 
                               "Accuracy": round(test_accuracy, 2),
                               "Validation Accuracy" : round(val_accuracy, 2),

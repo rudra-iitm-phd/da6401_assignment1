@@ -1,0 +1,21 @@
+{"time":"2025-03-15T13:07:03.691515+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_130703-l398st2j/logs/debug-core.log"}
+{"time":"2025-03-15T13:07:03.806602+05:30","level":"INFO","msg":"created new stream","id":"l398st2j"}
+{"time":"2025-03-15T13:07:03.806721+05:30","level":"INFO","msg":"stream: started","id":"l398st2j"}
+{"time":"2025-03-15T13:07:03.806839+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"l398st2j"}
+{"time":"2025-03-15T13:07:03.806967+05:30","level":"INFO","msg":"handler: started","stream_id":"l398st2j"}
+{"time":"2025-03-15T13:07:03.806845+05:30","level":"INFO","msg":"sender: started","stream_id":"l398st2j"}
+{"time":"2025-03-15T13:07:04.157586+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T13:31:01.776791+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63286->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T13:57:57.18105+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:64198->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T14:46:45.658307+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l398st2j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T14:46:46.187706+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:64294->35.186.228.49:443: read: operation timed out"}
+{"time":"2025-03-15T14:46:48.133279+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l398st2j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T14:46:48.210441+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T15:02:22.012071+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T15:02:22.180915+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l398st2j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T15:18:06.37741+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T15:18:07.869127+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l398st2j/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T15:33:21.696463+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-15T15:34:11.708238+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l398st2j/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-03-15T15:34:29.104084+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-15T15:35:14.379765+05:30","level":"INFO","msg":"stream: closing","id":"l398st2j"}
