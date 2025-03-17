@@ -54,33 +54,45 @@ Following are the list of arguments which are compatible
 python train.py
 ```
 ### 🔧 Customize the Model
-To customize parameters like hidden layers, activation functions, etc., run:
+To customize parameters like hidden layers, activation functions, etc., run with the arguemnts with the respective values provided by a space
+for eg :
+```bash
+python train.py -b 1024 -o adam -w_d 1e-2 -e 500 -beta1 0.9 -beta2 0.9999  -w_i xavier -lr 1e-2 -d mnist -a tanh
+```
+Following is a screen shot provided post running this command
+
+<img width="1440" alt="Screenshot 2025-03-17 at 11 07 34 PM" src="https://github.com/user-attachments/assets/317ed21a-daa7-4303-b008-f0fb1e180858" />
+
+
+
+If you need to check out the list of the parameters available run:
 
 ``` bash
 python train.py -h
 ```
+### 🌟 List of Arguments 
 
 | 🔧 **Name**              | 🔄 **Default Value**   | 📜 **Description**                                                       |
 |--------------------------|------------------------|-------------------------------------------------------------------------|
-| `-wp, --wandb_project`    | `myprojectname`        | 🧑‍💻 Project name for tracking experiments in the Weights & Biases dashboard. |
-| `-we, --wandb_entity`     | `myname`               | 🧑‍💻 Weights & Biases entity for tracking experiments.                 |
-| `-d, --dataset`           | `fashion_mnist`        | 📊 Choices: `["mnist", "fashion_mnist"]`                                |
-| `-e, --epochs`            | `500`                    | ⏳ Number of epochs to train the neural network.                        |
-| `-b, --batch_size`        | `1024`                    | 📦 Batch size used to train the neural network.                         |
-| `-l, --loss`              | `cross_entropy`        | 💀 Choices: `["mean_squared_error", "cross_entropy"]`                   |
-| `-o, --optimizer`         | `adam`                  | ⚙️ Choices: `["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"]`    |
-| `-lr, --learning_rate`    | `1e-2`                  | 🚀 Learning rate used to optimize model parameters.                     |
-| `-m, --momentum`          | `0.5`                  | 🌀 Momentum used by momentum and NAG optimizers.                         |
-| `-beta, --beta`           | `0.5`                  | 🔢 Beta used by RMSProp optimizer.                                      |
-| `-beta1, --beta1`         | `0.9`                  | 🔢 Beta1 used by Adam and Nadam optimizers.                             |
-| `-beta2, --beta2`         | `0.9999`                  | 🔢 Beta2 used by Adam and Nadam optimizers.                             |
-| `-eps, --epsilon`         | `0.000001`             | 🔢 Epsilon used by optimizers to prevent division by zero.              |
-| `-w_d, --weight_decay`    | `1e-2`                  | ⚖️ Weight decay used by optimizers to regularize the model.             |
-| `-w_i, --weight_init`     | `xavier`               | 🎲 Choices: `["random", "Xavier"]`                                     |
-| `-nhl, --num_layers`      | `1`                    | 🧠 Number of hidden layers in the neural network.                       |
-| `-sz, --hidden_size`      | `784`                    | 🔲 Number of neurons in each hidden layer.                              |
-| `-a, --activation`        | `relu`              | 🌟 Choices: `["identity", "sigmoid", "tanh", "ReLU"]`                   |
-
-
+| `-wp`, `--wandb_project`    | `myprojectname`        | 🧑‍💻 Project name for tracking experiments in the Weights & Biases dashboard. |
+| `-we`, `--wandb_entity`     | `myname`               | 🧑‍💻 Weights & Biases entity for tracking experiments.                 |
+| `-d`, `--dataset`           | `fashion_mnist`        | 📊 Choices: `["mnist", "fashion_mnist"]`                                |
+| `-e`, `--epochs`            | `500`                    | ⏳ Number of epochs to train the neural network.                        |
+| `-b`, `--batch_size`        | `1024`                    | 📦 Batch size used to train the neural network.                         |
+| `-l`, `--loss`              | `cross_entropy`        | 💀 Choices: `["mean_squared_error", "cross_entropy"]`                   |
+| `-o`, `--optimizer`         | `adam`                  | ⚙️ Choices: `["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"]`    |
+| `-lr`, `--learning_rate`    | `1e-2`                  | 🚀 Learning rate used to optimize model parameters.                     |
+| `-m`, `--momentum`          | `0.5`                  | 🌀 Momentum used by momentum and NAG optimizers.                         |
+| `-beta`, `--beta`           | `0.5`                  | 🔢 Beta used by RMSProp optimizer.                                      |
+| `-beta1`, `--beta1`         | `0.9`                  | 🔢 Beta1 used by Adam and Nadam optimizers.                             |
+| `-beta2`, `--beta2`         | `0.9999`                  | 🔢 Beta2 used by Adam and Nadam optimizers.                             |
+| `-eps`, `--epsilon`         | `0.000001`             | 🔢 Epsilon used by optimizers to prevent division by zero.              |
+| `-w_d`, `--weight_decay`    | `1e-2`                  | ⚖️ Weight decay used by optimizers to regularize the model.             |
+| `-w_i`, `--weight_init`     | `xavier`               | 🎲 Choices: `["random", "Xavier"]`                                     |
+| `-nhl`, `--num_layers`      | `1`                    | 🧠 Number of hidden layers in the neural network.                       |
+| `-sz`, `--hidden_size`      | `784`                    | 🔲 Number of neurons in each hidden layer.                              |
+| `-a`, `--activation`        | `relu`              | 🌟 Choices: `["identity", "sigmoid", "tanh", "ReLU"]`                   |
+| `--wandb_sweep`   | `false`       | 🧑‍💻 To generate a wandb sweep with the sweep configuration |
+| `--sweep_id`   | `null`      | 🧑‍💻 Run a sweep agent with a specific sweep id |
 ### 💬 Contact
 For any questions or issues, feel free to open an issue or contact me via GitHub.
