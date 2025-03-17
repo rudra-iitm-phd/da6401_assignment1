@@ -1,0 +1,19 @@
+{"time":"2025-03-15T23:51:48.673862+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_235148-l4gwhatg/logs/debug-core.log"}
+{"time":"2025-03-15T23:51:48.797502+05:30","level":"INFO","msg":"created new stream","id":"l4gwhatg"}
+{"time":"2025-03-15T23:51:48.79761+05:30","level":"INFO","msg":"stream: started","id":"l4gwhatg"}
+{"time":"2025-03-15T23:51:48.797641+05:30","level":"INFO","msg":"handler: started","stream_id":"l4gwhatg"}
+{"time":"2025-03-15T23:51:48.797787+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"l4gwhatg"}
+{"time":"2025-03-15T23:51:48.797664+05:30","level":"INFO","msg":"sender: started","stream_id":"l4gwhatg"}
+{"time":"2025-03-15T23:51:49.196724+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T00:05:49.911574+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l4gwhatg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T00:05:52.066202+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l4gwhatg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T00:05:56.694924+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/l4gwhatg/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T00:23:29.699241+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T00:23:29.700512+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T00:23:30.716325+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.382082666,"progress":"6.3KB/6.3KB"},{"desc":"uploading config.yaml","runtime_seconds":0.10927925,"progress":"2.6KB/2.6KB"}],"total_operations":2}}
+{"time":"2025-03-16T00:23:31.639913+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T00:23:32.016819+05:30","level":"INFO","msg":"stream: closing","id":"l4gwhatg"}
+{"time":"2025-03-16T00:23:32.016903+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"l4gwhatg"}
+{"time":"2025-03-16T00:23:32.016945+05:30","level":"INFO","msg":"sender: closed","stream_id":"l4gwhatg"}
+{"time":"2025-03-16T00:23:32.017101+05:30","level":"INFO","msg":"handler: closed","stream_id":"l4gwhatg"}
+{"time":"2025-03-16T00:23:32.017129+05:30","level":"INFO","msg":"stream: closed","id":"l4gwhatg"}

@@ -1,0 +1,17 @@
+{"time":"2025-03-15T16:32:30.557164+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_163230-ip4xm2ra/logs/debug-core.log"}
+{"time":"2025-03-15T16:32:30.675065+05:30","level":"INFO","msg":"created new stream","id":"ip4xm2ra"}
+{"time":"2025-03-15T16:32:30.675118+05:30","level":"INFO","msg":"stream: started","id":"ip4xm2ra"}
+{"time":"2025-03-15T16:32:30.675123+05:30","level":"INFO","msg":"handler: started","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T16:32:30.675204+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T16:32:30.675313+05:30","level":"INFO","msg":"sender: started","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T16:32:31.020496+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T19:24:19.893266+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63236->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:36:21.095097+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:49886->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:39:19.220052+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T19:39:19.221006+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T19:39:19.222995+05:30","level":"INFO","msg":"stream: closing","id":"ip4xm2ra"}
+{"time":"2025-03-15T19:39:20.267199+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T19:39:20.598036+05:30","level":"INFO","msg":"handler: closed","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T19:39:20.598086+05:30","level":"INFO","msg":"sender: closed","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T19:39:20.598065+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ip4xm2ra"}
+{"time":"2025-03-15T19:39:20.598155+05:30","level":"INFO","msg":"stream: closed","id":"ip4xm2ra"}

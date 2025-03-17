@@ -1,0 +1,33 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.56      Train accuracy : 28.78      Validation accuracy : 29.07      Test Accuracy : 28.56
+---------------------------------------------------------------------------------------------------------
+Loss : 0.74      Train accuracy : 64.38      Validation accuracy : 63.52      Test Accuracy : 64.0
+---------------------------------------------------------------------------------------------------------
+Loss : 0.54      Train accuracy : 71.57      Validation accuracy : 69.79      Test Accuracy : 70.38
+---------------------------------------------------------------------------------------------------------
+Loss : 0.44      Train accuracy : 74.92      Validation accuracy : 72.81      Test Accuracy : 73.15
+---------------------------------------------------------------------------------------------------------
+Loss : 0.45      Train accuracy : 74.18      Validation accuracy : 72.43      Test Accuracy : 72.4
+---------------------------------------------------------------------------------------------------------
+Loss : 0.36      Train accuracy : 78.52      Validation accuracy : 75.8      Test Accuracy : 75.99
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 54, in learn
+    updated_params = optim.update(params, grads)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/optimizer.py", line 75, in update
+    self.prev_update = deepcopy(grads)
+KeyboardInterrupt

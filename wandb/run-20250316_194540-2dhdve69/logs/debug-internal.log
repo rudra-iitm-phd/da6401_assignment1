@@ -1,0 +1,19 @@
+{"time":"2025-03-16T19:45:40.550283+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_194540-2dhdve69/logs/debug-core.log"}
+{"time":"2025-03-16T19:45:40.671145+05:30","level":"INFO","msg":"created new stream","id":"2dhdve69"}
+{"time":"2025-03-16T19:45:40.671209+05:30","level":"INFO","msg":"stream: started","id":"2dhdve69"}
+{"time":"2025-03-16T19:45:40.671251+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"2dhdve69"}
+{"time":"2025-03-16T19:45:40.671271+05:30","level":"INFO","msg":"sender: started","stream_id":"2dhdve69"}
+{"time":"2025-03-16T19:45:40.671235+05:30","level":"INFO","msg":"handler: started","stream_id":"2dhdve69"}
+{"time":"2025-03-16T19:45:40.989013+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T20:07:41.271138+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:54224->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-16T20:07:41.271107+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:54224->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-16T20:07:41.594446+05:30","level":"ERROR","msg":"request failed","error":"Put \"https://storage.googleapis.com/wandb-production.appspot.com/da24d008-iit-madras/da24d008-assignment1/2dhdve69/media/table/Confusion%20matrix_table_197_ba5b2958f4c6c4653315.table.json?Expires=1742222261&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tB2DYFpvGlbAvRpScegvRVW90BK6BTfKK9jKzaJbLETwuRLDh65P5sZ5%2BEBovwkGAVGNeOPuht4IExtP1e1zHnRE6KVAW0mgY1uDVQVX8RErYJr%2FSeyyeavpDY%2B9APfMF9h9YbduOAid4WfyrLumrEifUg%2F0sNtSuiXOOEKcPD5r%2BsxtMbIIJ71rQtIp6JhzWVVPrz4hMOFOX5%2BYZqd6L4OGIyLERj%2BXALaIVoxnOywAzbxqoPzOVfYyGdNywENa%2BL9uWu9IKEiUl2XF2gzHpMTqWtDEBkQI5WbalVMZ7uSE5zuUgxGAiYXadP6OrCshtpWbF8BvDk9oGOArkE3ebA%3D%3D\": read tcp 10.22.46.123:54229->142.250.77.187:443: read: connection reset by peer","method":"PUT","url":"https://storage.googleapis.com/wandb-production.appspot.com/da24d008-iit-madras/da24d008-assignment1/2dhdve69/media/table/Confusion%20matrix_table_197_ba5b2958f4c6c4653315.table.json?Expires=1742222261&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tB2DYFpvGlbAvRpScegvRVW90BK6BTfKK9jKzaJbLETwuRLDh65P5sZ5%2BEBovwkGAVGNeOPuht4IExtP1e1zHnRE6KVAW0mgY1uDVQVX8RErYJr%2FSeyyeavpDY%2B9APfMF9h9YbduOAid4WfyrLumrEifUg%2F0sNtSuiXOOEKcPD5r%2BsxtMbIIJ71rQtIp6JhzWVVPrz4hMOFOX5%2BYZqd6L4OGIyLERj%2BXALaIVoxnOywAzbxqoPzOVfYyGdNywENa%2BL9uWu9IKEiUl2XF2gzHpMTqWtDEBkQI5WbalVMZ7uSE5zuUgxGAiYXadP6OrCshtpWbF8BvDk9oGOArkE3ebA%3D%3D"}
+{"time":"2025-03-16T20:13:09.881947+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T20:13:09.885604+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T20:13:10.894526+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T20:13:10.894234+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-16T20:13:11.232969+05:30","level":"INFO","msg":"stream: closing","id":"2dhdve69"}
+{"time":"2025-03-16T20:13:11.233049+05:30","level":"INFO","msg":"handler: closed","stream_id":"2dhdve69"}
+{"time":"2025-03-16T20:13:11.233055+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"2dhdve69"}
+{"time":"2025-03-16T20:13:11.233326+05:30","level":"INFO","msg":"sender: closed","stream_id":"2dhdve69"}
+{"time":"2025-03-16T20:13:11.233358+05:30","level":"INFO","msg":"stream: closed","id":"2dhdve69"}

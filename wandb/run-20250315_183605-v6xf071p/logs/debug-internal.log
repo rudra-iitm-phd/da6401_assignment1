@@ -1,0 +1,19 @@
+{"time":"2025-03-15T18:36:05.641834+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_183605-v6xf071p/logs/debug-core.log"}
+{"time":"2025-03-15T18:36:05.763618+05:30","level":"INFO","msg":"created new stream","id":"v6xf071p"}
+{"time":"2025-03-15T18:36:05.763692+05:30","level":"INFO","msg":"stream: started","id":"v6xf071p"}
+{"time":"2025-03-15T18:36:05.763707+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"v6xf071p"}
+{"time":"2025-03-15T18:36:05.763787+05:30","level":"INFO","msg":"sender: started","stream_id":"v6xf071p"}
+{"time":"2025-03-15T18:36:05.763741+05:30","level":"INFO","msg":"handler: started","stream_id":"v6xf071p"}
+{"time":"2025-03-15T18:36:06.121557+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T19:24:08.443629+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:63410->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:36:09.288599+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/v6xf071p/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-15T19:36:09.504486+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:49840->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:39:25.038757+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T19:39:25.040221+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T19:39:26.058144+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.405982125,"progress":"2.6KB/2.6KB"}],"total_operations":1}}
+{"time":"2025-03-15T19:39:26.071012+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T19:39:26.380182+05:30","level":"INFO","msg":"stream: closing","id":"v6xf071p"}
+{"time":"2025-03-15T19:39:26.380223+05:30","level":"INFO","msg":"handler: closed","stream_id":"v6xf071p"}
+{"time":"2025-03-15T19:39:26.380245+05:30","level":"INFO","msg":"sender: closed","stream_id":"v6xf071p"}
+{"time":"2025-03-15T19:39:26.380233+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"v6xf071p"}
+{"time":"2025-03-15T19:39:26.380381+05:30","level":"INFO","msg":"stream: closed","id":"v6xf071p"}

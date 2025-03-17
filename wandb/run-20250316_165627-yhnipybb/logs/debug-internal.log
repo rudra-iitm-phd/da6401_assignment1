@@ -1,0 +1,21 @@
+{"time":"2025-03-16T16:56:28.015089+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_165627-yhnipybb/logs/debug-core.log"}
+{"time":"2025-03-16T16:56:28.129949+05:30","level":"INFO","msg":"created new stream","id":"yhnipybb"}
+{"time":"2025-03-16T16:56:28.130003+05:30","level":"INFO","msg":"stream: started","id":"yhnipybb"}
+{"time":"2025-03-16T16:56:28.13007+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"yhnipybb"}
+{"time":"2025-03-16T16:56:28.130115+05:30","level":"INFO","msg":"handler: started","stream_id":"yhnipybb"}
+{"time":"2025-03-16T16:56:28.130231+05:30","level":"INFO","msg":"sender: started","stream_id":"yhnipybb"}
+{"time":"2025-03-16T16:56:28.438788+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:03:29.237914+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/yhnipybb/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T17:03:31.501064+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/yhnipybb/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T17:03:36.136952+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/yhnipybb/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T17:03:45.310528+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/yhnipybb/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T17:03:46.451183+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:55860->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-03-16T17:13:09.120035+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:13:09.123132+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:13:10.129755+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.273613167,"progress":"2.6KB/2.6KB"}],"total_operations":1}}
+{"time":"2025-03-16T17:13:10.229813+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:13:10.56352+05:30","level":"INFO","msg":"stream: closing","id":"yhnipybb"}
+{"time":"2025-03-16T17:13:10.563593+05:30","level":"INFO","msg":"handler: closed","stream_id":"yhnipybb"}
+{"time":"2025-03-16T17:13:10.5636+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"yhnipybb"}
+{"time":"2025-03-16T17:13:10.563819+05:30","level":"INFO","msg":"sender: closed","stream_id":"yhnipybb"}
+{"time":"2025-03-16T17:13:10.56384+05:30","level":"INFO","msg":"stream: closed","id":"yhnipybb"}

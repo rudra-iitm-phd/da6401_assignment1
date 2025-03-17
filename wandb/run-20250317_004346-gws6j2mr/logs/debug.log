@@ -1,0 +1,660 @@
+2025-03-17 00:43:46,432 INFO    Thread-10 :55799 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 00:43:46,435 INFO    Thread-10 :55799 [wandb_setup.py:_flush():67] Configure stats pid to 55799
+2025-03-17 00:43:46,436 INFO    Thread-10 :55799 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-03-17 00:43:46,436 INFO    Thread-10 :55799 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/settings
+2025-03-17 00:43:46,436 INFO    Thread-10 :55799 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 00:43:46,437 INFO    Thread-10 :55799 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_004346-gws6j2mr/logs/debug.log
+2025-03-17 00:43:46,437 INFO    Thread-10 :55799 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_004346-gws6j2mr/logs/debug-internal.log
+2025-03-17 00:43:46,438 INFO    Thread-10 :55799 [wandb_init.py:init():761] calling init triggers
+2025-03-17 00:43:46,438 INFO    Thread-10 :55799 [wandb_init.py:init():766] wandb.init called with sweep_config: {'activation': 'identity', 'batch_size': 1024, 'beta1': 0.8445933449225368, 'beta2': 0.9339484555574288, 'epochs': 500, 'hidden_size': [784], 'learning_rate': 0.0001583382693870905, 'loss': 'cross_entropy', 'momentum': 0.734174637512079, 'optimizer': 'adam', 'weight_decay': 0.0003847572797913877, 'weight_init': 'xavier'}
+config: {'epochs': 800, 'batch_size': 512, 'loss': 'cross_entropy', 'optimizer': 'adam', 'learning_rate': 0.0004077935104043635, 'weight_init': 'xavier', 'hidden_size': [64, 128, 256], 'num_layers': 3, 'input_size': 784, 'output_size': 10, 'beta': 0.5, 'activation': 'relu', 'weight_decay': 0.00039918222691903406, 'beta1': 0.8001415577336047, 'beta2': 0.9806149803821308, 'epsilon': 1e-06, 'momentum': 0.6190404777677416, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'da24d008-assignment1', 'wandb_sweep': True, 'sweep_id': 'da24d008-iit-madras/da24d008-assignment1/tyghzwuw', 'dataset': 'fashion_mnist', '_wandb': {}}
+2025-03-17 00:43:46,438 INFO    Thread-10 :55799 [wandb_init.py:init():784] starting backend
+2025-03-17 00:43:46,438 INFO    Thread-10 :55799 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 00:43:46,450 INFO    Thread-10 :55799 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-03-17 00:43:46,450 INFO    Thread-10 :55799 [wandb_init.py:init():798] backend started and connected
+2025-03-17 00:43:46,462 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb None None {'activation': 'identity', 'batch_size': 1024, 'beta1': 0.8445933449225368, 'beta2': 0.9339484555574288, 'epochs': 500, 'hidden_size': [784], 'learning_rate': 0.0001583382693870905, 'loss': 'cross_entropy', 'momentum': 0.734174637512079, 'optimizer': 'adam', 'weight_decay': 0.0003847572797913877, 'weight_init': 'xavier'}
+2025-03-17 00:43:46,685 INFO    Thread-10 :55799 [wandb_init.py:init():891] updated telemetry
+2025-03-17 00:43:46,759 INFO    Thread-10 :55799 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 00:43:47,080 INFO    Thread-10 :55799 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 00:43:47,508 INFO    Thread-10 :55799 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 00:43:47,509 INFO    Thread-10 :55799 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 00:43:47,509 INFO    Thread-10 :55799 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 00:43:47,509 INFO    Thread-10 :55799 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 00:43:47,515 INFO    Thread-10 :55799 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 00:43:56,777 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:44:16,181 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:44:44,152 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:45:05,464 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:45:28,115 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:45:54,163 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:46:14,723 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:46:36,507 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:46:58,006 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:47:19,363 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:47:41,542 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:48:01,272 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:48:21,058 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:48:42,901 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:49:02,122 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:49:24,069 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:49:43,510 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:50:02,306 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:50:26,185 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:50:49,491 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:51:09,750 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:51:28,958 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:51:51,830 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:52:11,925 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:52:28,823 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:52:49,616 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:53:10,823 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:53:33,661 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:53:54,594 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:54:17,053 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:54:39,577 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:55:04,441 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:55:27,216 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:55:44,659 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:56:03,215 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:56:23,945 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:56:43,938 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:57:03,459 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 00:57:21,568 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 01:07:48,524 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 01:23:31,744 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 01:32:33,027 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x1691da370>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1691da370>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1691da370>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 01:32:42,808 INFO    Thread-3  :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x1691daf10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1691daf10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 398, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1691daf10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 02:06:50,266 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 02:24:44,972 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x1692d39a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1692d39a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1692d39a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 02:58:47,125 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 03:08:38,067 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16a97eaf0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16a97eaf0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16a97eaf0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 03:26:26,817 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 03:43:48,005 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16a9d7d90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16a9d7d90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16a9d7d90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 04:18:11,911 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 04:36:04,264 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16c6c0d60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c6c0d60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c6c0d60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 05:07:00,031 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 05:24:53,201 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16bd30400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16bd30400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16bd30400>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 06:15:32,654 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 06:15:35,934 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16c802880>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c802880>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c802880>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 06:49:49,458 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 07:05:12,296 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16c66dfa0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c66dfa0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16c66dfa0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 08:11:20,666 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 08:11:24,409 INFO    Thread-10 :55799 [retry.py:__call__():175] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x16e0fc220>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16e0fc220>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x16e0fc220>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2025-03-17 08:14:08,602 INFO    Thread-10 :55799 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 08:14:23,404 INFO    Thread-10 :55799 [wandb_run.py:_finish():2112] finishing run da24d008-iit-madras/da24d008-assignment1/gws6j2mr
+2025-03-17 08:14:23,421 INFO    Thread-10 :55799 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 0
+2025-03-17 08:14:23,428 INFO    Thread-10 :55799 [wandb_run.py:_restore():2322] restore
+2025-03-17 08:14:23,429 INFO    Thread-10 :55799 [wandb_run.py:_restore():2328] restore done
+2025-03-17 08:14:48,760 INFO    Thread-10 :55799 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-03-17 08:14:48,763 INFO    Thread-10 :55799 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-03-17 08:14:48,765 INFO    Thread-10 :55799 [wandb_run.py:_footer_sync_info():3917] logging synced files

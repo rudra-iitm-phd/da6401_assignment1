@@ -193,6 +193,10 @@ class MeanSquaredError(LossFunction):
                   return x>0
             elif activation == 'sigmoid':
                   return np.multiply(self.activations['sigmoid'](x), (1 - self.activations['sigmoid'](x)))
+            elif activation == 'identity':
+                  return np.ones_like(x)
+            elif activation == 'tanh':
+                  return np.ones_like(x) - np.power(self.activations['tanh'](x), 2)
 
             
 

@@ -30,7 +30,7 @@ class Trainer:
             loss = loss_fn()
             acc = acc_metrics()
 
-            max_iter = 100
+            max_iter = 10
 
             for epoch in range(epochs):
 

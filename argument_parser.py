@@ -3,11 +3,11 @@ import argparse
 parser = argparse.ArgumentParser(description = "Train the neural network for the classification of Fashion MNIST dataset")
 
 parser.add_argument('-e', '--epochs', 
-                  type = int, default = 1000, 
+                  type = int, default = 500, 
                   help = 'Number of epochs to train neural network')
 
 parser.add_argument('-b', '--batch_size', 
-                  type = int, default = 512, 
+                  type = int, default = 1024, 
                   help = 'Batch size used to train neural network.')
 
 parser.add_argument('-l', '--loss', 
@@ -15,7 +15,7 @@ parser.add_argument('-l', '--loss',
                   help = 'choices: ["mean_squared_error", "cross_entropy"]')
 
 parser.add_argument('-o', '--optimizer', 
-                  type = str, default = 'momentum', 
+                  type = str, default = 'adam', 
                   help = 'choices: ["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"]')
 
 parser.add_argument('-lr', '--learning_rate', 
@@ -23,7 +23,7 @@ parser.add_argument('-lr', '--learning_rate',
                   help = 'Learning rate used to optimize model parameters')
 
 parser.add_argument('-w_i', '--weight_init', 
-                  type = str, default = 'random', 
+                  type = str, default = 'xavier', 
                   help = 'choices : ["random", "xavier"]')
 
 parser.add_argument('-sz', '--hidden_size', 
@@ -52,16 +52,16 @@ parser.add_argument('-a', '--activation',
                   help = 'Choices : ["identity", "sigmoid", "tanh", "ReLU"]')
 
 parser.add_argument('-w_d', '--weight_decay', 
-                  type = float, default = 0,
+                  type = float, default = 1e-2,
                   help = 'Weight decay used by optimizers.(L2 Regularization)')
 
 parser.add_argument('-beta1', '--beta1', 
-                  type = float, default = 0.5,
+                  type = float, default = 0.9,
                   help = 'Beta1 used by adam and nadam optimizers')
 
 
 parser.add_argument('-beta2', '--beta2', 
-                  type = float, default = 0.5,
+                  type = float, default = 0.9999,
                   help = 'Beta2 used by adam and nadam optimizers')
 
 parser.add_argument('-eps', '--epsilon', 

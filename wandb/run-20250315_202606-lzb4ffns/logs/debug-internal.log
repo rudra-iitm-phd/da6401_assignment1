@@ -1,0 +1,16 @@
+{"time":"2025-03-15T20:26:06.143099+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_202606-lzb4ffns/logs/debug-core.log"}
+{"time":"2025-03-15T20:26:06.27719+05:30","level":"INFO","msg":"created new stream","id":"lzb4ffns"}
+{"time":"2025-03-15T20:26:06.277289+05:30","level":"INFO","msg":"stream: started","id":"lzb4ffns"}
+{"time":"2025-03-15T20:26:06.277406+05:30","level":"INFO","msg":"handler: started","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:26:06.277407+05:30","level":"INFO","msg":"sender: started","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:26:06.277456+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:26:06.631303+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T20:59:35.905536+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T20:59:35.909365+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T20:59:36.932771+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.195491,"progress":"6.3KB/6.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.195134792,"progress":"1.7KB/1.7KB"}],"total_operations":2}}
+{"time":"2025-03-15T20:59:37.391736+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T20:59:37.748306+05:30","level":"INFO","msg":"stream: closing","id":"lzb4ffns"}
+{"time":"2025-03-15T20:59:37.748377+05:30","level":"INFO","msg":"handler: closed","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:59:37.748383+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:59:37.748652+05:30","level":"INFO","msg":"sender: closed","stream_id":"lzb4ffns"}
+{"time":"2025-03-15T20:59:37.748684+05:30","level":"INFO","msg":"stream: closed","id":"lzb4ffns"}

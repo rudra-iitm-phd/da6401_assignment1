@@ -1,0 +1,34 @@
+{"time":"2025-03-16T20:28:01.771124+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_202801-cygxe576/logs/debug-core.log"}
+{"time":"2025-03-16T20:28:01.880193+05:30","level":"INFO","msg":"created new stream","id":"cygxe576"}
+{"time":"2025-03-16T20:28:01.880248+05:30","level":"INFO","msg":"stream: started","id":"cygxe576"}
+{"time":"2025-03-16T20:28:01.88025+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:28:01.880249+05:30","level":"INFO","msg":"handler: started","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:28:01.880309+05:30","level":"INFO","msg":"sender: started","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:28:02.243628+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T20:28:32.997656+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:35.288289+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:39.952961+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:48.734588+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:49.071947+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-03-16T20:28:50.32661+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:56514->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-03-16T20:28:51.123977+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:52.649112+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:55.226811+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:28:57.343517+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:05.145761+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:06.827299+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:07.24702+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:22.086693+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:26.409845+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:43.091067+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/cygxe576/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:29:55.611704+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:30:05.510775+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T20:37:06.97007+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T20:37:06.973801+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T20:37:07.980703+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-cygxe576-ConfusionMatrixTable","runtime_seconds":3.311494417}],"total_operations":1}}
+{"time":"2025-03-16T20:37:08.346664+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T20:37:08.659908+05:30","level":"INFO","msg":"stream: closing","id":"cygxe576"}
+{"time":"2025-03-16T20:37:08.659995+05:30","level":"INFO","msg":"handler: closed","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:37:08.659992+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:37:08.660257+05:30","level":"INFO","msg":"sender: closed","stream_id":"cygxe576"}
+{"time":"2025-03-16T20:37:08.660292+05:30","level":"INFO","msg":"stream: closed","id":"cygxe576"}

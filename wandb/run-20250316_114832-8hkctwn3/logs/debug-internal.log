@@ -1,0 +1,17 @@
+{"time":"2025-03-16T11:48:32.036868+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_114832-8hkctwn3/logs/debug-core.log"}
+{"time":"2025-03-16T11:48:32.157538+05:30","level":"INFO","msg":"created new stream","id":"8hkctwn3"}
+{"time":"2025-03-16T11:48:32.157666+05:30","level":"INFO","msg":"stream: started","id":"8hkctwn3"}
+{"time":"2025-03-16T11:48:32.157674+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:48:32.157672+05:30","level":"INFO","msg":"handler: started","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:48:32.157774+05:30","level":"INFO","msg":"sender: started","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:48:32.501695+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T11:50:31.119495+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T11:50:31.120716+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T11:50:32.131136+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":46.427851791},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":44.168105125},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":41.9314175},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":39.611917833},{"desc":"uploading artifact run-8hkctwn3-Confusionmatrix_table","runtime_seconds":37.748191625},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":37.371174},{"desc":"uploading artifact run-8hkctwn3-Confusionmatrix_table","runtime_seconds":35.5146655},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":35.098863917},{"desc":"uploading artifact run-8hkctwn3-Confusionmatrix_table","runtime_seconds":33.204599708},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":32.804715292}],"total_operations":37}}
+{"time":"2025-03-16T11:51:32.249769+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":66.757794166},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":64.5436625},{"desc":"uploading artifact run-8hkctwn3-ConfusionMatrixTable","runtime_seconds":62.112091083}],"total_operations":3}}
+{"time":"2025-03-16T11:51:41.337013+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T11:51:41.632725+05:30","level":"INFO","msg":"stream: closing","id":"8hkctwn3"}
+{"time":"2025-03-16T11:51:41.632803+05:30","level":"INFO","msg":"handler: closed","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:51:41.632825+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:51:41.632846+05:30","level":"INFO","msg":"sender: closed","stream_id":"8hkctwn3"}
+{"time":"2025-03-16T11:51:41.633002+05:30","level":"INFO","msg":"stream: closed","id":"8hkctwn3"}

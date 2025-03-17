@@ -1,0 +1,49 @@
+{
+  "os": "macOS-15.1.1-arm64-arm-64bit",
+  "python": "CPython 3.8.16",
+  "startedAt": "2025-03-16T06:18:32.034237Z",
+  "args": [
+    "--wandb_sweep",
+    "--sweep_id",
+    "da24d008-iit-madras/da24d008-assignment1/dikagoze"
+  ],
+  "program": "train.py",
+  "codePath": "train.py",
+  "git": {
+    "remote": "https://github.com/rudra-iitm-phd/da6401_assignment1.git",
+    "commit": "eac6d0eb3d970a1d7ec07cc65b94464c550cd8f0"
+  },
+  "email": "da24d008@smail.iitm.ac.in",
+  "root": "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1",
+  "host": "Rudras-MacBook-Air.local",
+  "executable": "/Users/rudra_sarkar/Documents/CNN_practice/5h_prac/TFODCourse/tfod_new/env/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "245107195904",
+      "used": "226811625472"
+    },
+    "/System/Volumes/Data": {
+      "total": "245107195904",
+      "used": "226811625472"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 8
+  },
+  "apple": {
+    "name": "Apple M1",
+    "ecpuCores": 4,
+    "pcpuCores": 4,
+    "gpuCores": 7,
+    "memoryGb": 8,
+    "swapTotalBytes": "6442450944",
+    "ramTotalBytes": "8589934592"
+  }
+}

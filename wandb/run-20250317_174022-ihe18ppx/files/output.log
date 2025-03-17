@@ -1,0 +1,33 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.59      Train accuracy : 18.82      Validation accuracy : 18.77      Test Accuracy : 19.15
+---------------------------------------------------------------------------------------------------------
+Loss : 0.65      Train accuracy : 65.42      Validation accuracy : 63.49      Test Accuracy : 62.89
+---------------------------------------------------------------------------------------------------------
+Loss : 0.49      Train accuracy : 72.35      Validation accuracy : 69.8      Test Accuracy : 69.39
+---------------------------------------------------------------------------------------------------------
+Loss : 0.41      Train accuracy : 74.68      Validation accuracy : 72.46      Test Accuracy : 71.78
+---------------------------------------------------------------------------------------------------------
+Loss : 0.38      Train accuracy : 76.27      Validation accuracy : 73.74      Test Accuracy : 73.18
+---------------------------------------------------------------------------------------------------------
+Loss : 0.34      Train accuracy : 78.15      Validation accuracy : 75.29      Test Accuracy : 74.84
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    params, logits = nn.forward(x)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 76, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b']
+KeyboardInterrupt

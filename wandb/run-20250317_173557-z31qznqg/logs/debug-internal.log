@@ -1,0 +1,12 @@
+{"time":"2025-03-17T17:35:57.694953+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_173557-z31qznqg/logs/debug-core.log"}
+{"time":"2025-03-17T17:35:57.810623+05:30","level":"INFO","msg":"created new stream","id":"z31qznqg"}
+{"time":"2025-03-17T17:35:57.81091+05:30","level":"INFO","msg":"stream: started","id":"z31qznqg"}
+{"time":"2025-03-17T17:35:57.811292+05:30","level":"INFO","msg":"handler: started","stream_id":"z31qznqg"}
+{"time":"2025-03-17T17:35:57.81143+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"z31qznqg"}
+{"time":"2025-03-17T17:35:57.811776+05:30","level":"INFO","msg":"sender: started","stream_id":"z31qznqg"}
+{"time":"2025-03-17T17:35:58.205942+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T17:37:36.070362+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T17:37:36.071293+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T17:37:37.084254+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-z31qznqg-ConfusionMatrixTable","runtime_seconds":2.400845833,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":1.171488416,"progress":"141.0KB/141.0KB"}]}],"total_operations":1}}
+{"time":"2025-03-17T17:37:38.089772+05:30","level":"INFO","msg":"stream: closing","id":"z31qznqg"}
+{"time":"2025-03-17T17:37:38.090194+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}

@@ -1,0 +1,17 @@
+{"time":"2025-03-17T11:09:25.745726+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_110925-katgm678/logs/debug-core.log"}
+{"time":"2025-03-17T11:09:25.864368+05:30","level":"INFO","msg":"created new stream","id":"katgm678"}
+{"time":"2025-03-17T11:09:25.864413+05:30","level":"INFO","msg":"stream: started","id":"katgm678"}
+{"time":"2025-03-17T11:09:25.864453+05:30","level":"INFO","msg":"handler: started","stream_id":"katgm678"}
+{"time":"2025-03-17T11:09:25.86448+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"katgm678"}
+{"time":"2025-03-17T11:09:25.864496+05:30","level":"INFO","msg":"sender: started","stream_id":"katgm678"}
+{"time":"2025-03-17T11:09:26.252041+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T11:35:39.259162+05:30","level":"ERROR","msg":"request failed","error":"Put \"https://storage.googleapis.com/wandb-production.appspot.com/da24d008-iit-madras/da24d008-assignment1/katgm678/media/table/Confusion%20matrix_table_113_70f538fc1697adf79de2.table.json?Expires=1742277939&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PO8G0pFKC9NuqXENSVI4grdImSk1JaLkkm6w%2F%2BkSYuz7qpd4HCdOkWRAtBjEO0mQvf3z%2BPZF%2Fg2Aucx5YlTLbhwaTx8p5MR2%2F90VIM3hSNnqLN3TR5xHTz0tXwz4bCQY2Qt02gatFuOZTsSvB1ix%2BR%2BuFZh5nrTXCyN7IZhPfiKyzSMlvitDIAssSoaFvVSP%2Fy9H0YvmpaAyDZl899Ra8rWOB4RH%2FV0Dv2CrniFlQ8TkvWKegH96jgm%2FCjy9%2B77ZGPQt9R3n3dj5b9nwbArgFlcx9%2BFHtcniqRtXcOUxuQvR%2Fy%2BH0vZevcxjwZ9hdKbg0M327o4Wdf5Ie9TweoH%2BWQ%3D%3D\": read tcp 10.22.46.123:57357->142.250.182.59:443: read: connection reset by peer","method":"PUT","url":"https://storage.googleapis.com/wandb-production.appspot.com/da24d008-iit-madras/da24d008-assignment1/katgm678/media/table/Confusion%20matrix_table_113_70f538fc1697adf79de2.table.json?Expires=1742277939&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PO8G0pFKC9NuqXENSVI4grdImSk1JaLkkm6w%2F%2BkSYuz7qpd4HCdOkWRAtBjEO0mQvf3z%2BPZF%2Fg2Aucx5YlTLbhwaTx8p5MR2%2F90VIM3hSNnqLN3TR5xHTz0tXwz4bCQY2Qt02gatFuOZTsSvB1ix%2BR%2BuFZh5nrTXCyN7IZhPfiKyzSMlvitDIAssSoaFvVSP%2Fy9H0YvmpaAyDZl899Ra8rWOB4RH%2FV0Dv2CrniFlQ8TkvWKegH96jgm%2FCjy9%2B77ZGPQt9R3n3dj5b9nwbArgFlcx9%2BFHtcniqRtXcOUxuQvR%2Fy%2BH0vZevcxjwZ9hdKbg0M327o4Wdf5Ie9TweoH%2BWQ%3D%3D"}
+{"time":"2025-03-17T11:42:33.603394+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T11:42:33.606632+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T11:42:34.614704+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.125037917,"progress":"2.6KB/2.6KB"}],"total_operations":1}}
+{"time":"2025-03-17T11:42:34.840207+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T11:42:35.176375+05:30","level":"INFO","msg":"stream: closing","id":"katgm678"}
+{"time":"2025-03-17T11:42:35.17643+05:30","level":"INFO","msg":"handler: closed","stream_id":"katgm678"}
+{"time":"2025-03-17T11:42:35.17645+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"katgm678"}
+{"time":"2025-03-17T11:42:35.17707+05:30","level":"INFO","msg":"sender: closed","stream_id":"katgm678"}
+{"time":"2025-03-17T11:42:35.177113+05:30","level":"INFO","msg":"stream: closed","id":"katgm678"}

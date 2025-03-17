@@ -1,0 +1,28 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 3.27      Train accuracy : 34.1      Validation accuracy : 32.64      Test Accuracy : 32.11
+---------------------------------------------------------------------------------------------------------
+Loss : 0.43      Train accuracy : 75.28      Validation accuracy : 72.38      Test Accuracy : 72.71
+---------------------------------------------------------------------------------------------------------
+Loss : 0.34      Train accuracy : 81.3      Validation accuracy : 77.14      Test Accuracy : 77.73
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 53, in learn
+    grads = loss.backpropagate(params)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/loss_functions.py", line 85, in backpropagate
+    grads[block][layer] = np.dot(grads[block]['a'], params['hidden0']['x'].T)*(1/self.pred_logits.shape[-1])
+  File "<__array_function__ internals>", line 180, in dot
+KeyboardInterrupt

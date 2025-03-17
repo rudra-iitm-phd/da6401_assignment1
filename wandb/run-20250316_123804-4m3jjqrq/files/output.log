@@ -1,0 +1,21 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : sigmoid
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 3.56      Train accuracy : 14.07      Validation accuracy : 13.69      Test Accuracy : 13.97
+---------------------------------------------------------------------------------------------------------
+Loss : 0.62      Train accuracy : 67.88      Validation accuracy : 67.08      Test Accuracy : 66.37
+---------------------------------------------------------------------------------------------------------
+Loss : 0.4      Train accuracy : 74.83      Validation accuracy : 72.89      Test Accuracy : 72.38
+---------------------------------------------------------------------------------------------------------
+[34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+[34m[1mwandb[0m: [33mWARNING[0m Config item 'optimizer' was locked by 'sweep' (ignored update).

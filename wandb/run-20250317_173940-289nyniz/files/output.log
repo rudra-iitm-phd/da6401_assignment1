@@ -1,0 +1,29 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.24      Train accuracy : 29.72      Validation accuracy : 29.25      Test Accuracy : 29.78
+---------------------------------------------------------------------------------------------------------
+Loss : 0.7      Train accuracy : 66.53      Validation accuracy : 64.8      Test Accuracy : 64.28
+---------------------------------------------------------------------------------------------------------
+Loss : 0.53      Train accuracy : 71.62      Validation accuracy : 69.72      Test Accuracy : 69.5
+---------------------------------------------------------------------------------------------------------
+Loss : 0.45      Train accuracy : 73.27      Validation accuracy : 71.32      Test Accuracy : 70.91
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    params, logits = nn.forward(x)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 76, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b']
+KeyboardInterrupt

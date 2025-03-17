@@ -1,0 +1,17 @@
+{"time":"2025-03-17T17:37:46.078973+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_173746-fetu7io4/logs/debug-core.log"}
+{"time":"2025-03-17T17:37:46.189301+05:30","level":"INFO","msg":"created new stream","id":"fetu7io4"}
+{"time":"2025-03-17T17:37:46.189347+05:30","level":"INFO","msg":"stream: started","id":"fetu7io4"}
+{"time":"2025-03-17T17:37:46.18941+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:37:46.189473+05:30","level":"INFO","msg":"sender: started","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:37:46.18944+05:30","level":"INFO","msg":"handler: started","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:37:46.532557+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T17:38:35.425413+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T17:38:35.425947+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T17:38:36.430365+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T17:38:36.440906+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 27-32","runtime_seconds":0.0102565}],"total_operations":1}}
+{"time":"2025-03-17T17:38:36.75484+05:30","level":"INFO","msg":"stream: closing","id":"fetu7io4"}
+{"time":"2025-03-17T17:38:36.754951+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:38:36.755001+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-03-17T17:38:36.755049+05:30","level":"INFO","msg":"sender: closed","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:38:36.755261+05:30","level":"INFO","msg":"handler: closed","stream_id":"fetu7io4"}
+{"time":"2025-03-17T17:38:36.755288+05:30","level":"INFO","msg":"stream: closed","id":"fetu7io4"}

@@ -1,0 +1,27 @@
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_setup.py:_flush():67] Configure stats pid to 69413
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/.config/wandb/settings
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_setup.py:_flush():67] Loading settings from /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/settings
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_233004-vkt5bh5q/logs/debug.log
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_233004-vkt5bh5q/logs/debug-internal.log
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:init():761] calling init triggers
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'epochs': 500, 'batch_size': 1024, 'loss': 'cross_entropy', 'optimizer': 'adam', 'learning_rate': 0.01, 'weight_init': 'xavier', 'hidden_size': [784], 'num_layers': 1, 'input_size': 784, 'output_size': 10, 'beta': 0.5, 'activation': 'tanh', 'weight_decay': 0.01, 'beta1': 0.9, 'beta2': 0.9999, 'epsilon': 1e-06, 'momentum': 0.5, 'wandb_entity': 'da24d008-iit-madras', 'wandb_project': 'da24d008-assignment1', 'wandb_sweep': False, 'sweep_id': None, 'dataset': 'mnist', '_wandb': {}}
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:init():784] starting backend
+2025-03-17 23:30:04,709 INFO    MainThread:69413 [wandb_init.py:init():788] sending inform_init request
+2025-03-17 23:30:04,728 INFO    MainThread:69413 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-03-17 23:30:04,728 INFO    MainThread:69413 [wandb_init.py:init():798] backend started and connected
+2025-03-17 23:30:04,731 INFO    MainThread:69413 [wandb_init.py:init():891] updated telemetry
+2025-03-17 23:30:04,752 INFO    MainThread:69413 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-17 23:30:05,261 INFO    MainThread:69413 [wandb_init.py:init():990] starting run threads in backend
+2025-03-17 23:30:05,409 INFO    MainThread:69413 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-17 23:30:05,409 INFO    MainThread:69413 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-17 23:30:05,410 INFO    MainThread:69413 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-17 23:30:05,410 INFO    MainThread:69413 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-17 23:30:05,412 INFO    MainThread:69413 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-17 23:30:10,741 INFO    MainThread:69413 [wandb_run.py:_config_callback():1261] config_cb ('_wandb', 'visualize', 'Confusion matrix') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/confusion_matrix/v1', 'fieldSettings': {'Actual': 'Actual', 'Predicted': 'Predicted', 'nPredictions': 'nPredictions'}, 'stringSettings': {'title': 'Confusion Matrix Curve'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'Confusion matrix_table'}], 'fields': []}]}]}}} None
+2025-03-17 23:30:11,979 INFO    MainThread:69413 [wandb_run.py:_finish():2112] finishing run da24d008-iit-madras/da24d008-assignment1/vkt5bh5q
+2025-03-17 23:30:11,979 INFO    MainThread:69413 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-03-17 23:30:11,979 INFO    MainThread:69413 [wandb_run.py:_restore():2322] restore
+2025-03-17 23:30:11,979 INFO    MainThread:69413 [wandb_run.py:_restore():2328] restore done

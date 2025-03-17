@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:21:32.538224+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_172132-nr6j6s1a/logs/debug-core.log"}
+{"time":"2025-03-16T17:21:32.657793+05:30","level":"INFO","msg":"created new stream","id":"nr6j6s1a"}
+{"time":"2025-03-16T17:21:32.65783+05:30","level":"INFO","msg":"stream: started","id":"nr6j6s1a"}
+{"time":"2025-03-16T17:21:32.657935+05:30","level":"INFO","msg":"handler: started","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:21:32.65793+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:21:32.657934+05:30","level":"INFO","msg":"sender: started","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:21:33.003759+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:24:02.059195+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:24:02.06214+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:24:03.068368+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":25.221252958,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":1.107642541,"progress":"141.0KB/141.0KB"}]},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":22.458970959},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":19.663610708},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":16.600605833},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":13.828673042},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":11.067103917},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":8.098810833},{"desc":"uploading artifact run-nr6j6s1a-Confusionmatrix_table","runtime_seconds":5.643871208},{"desc":"uploading artifact run-nr6j6s1a-ConfusionMatrixTable","runtime_seconds":5.248818209},{"desc":"uploading artifact run-nr6j6s1a-Confusionmatrix_table","runtime_seconds":2.8596552920000002}],"total_operations":11}}
+{"time":"2025-03-16T17:24:31.595291+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:24:31.895757+05:30","level":"INFO","msg":"stream: closing","id":"nr6j6s1a"}
+{"time":"2025-03-16T17:24:31.895828+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:24:31.896028+05:30","level":"INFO","msg":"sender: closed","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:24:31.896063+05:30","level":"INFO","msg":"handler: closed","stream_id":"nr6j6s1a"}
+{"time":"2025-03-16T17:24:31.8961+05:30","level":"INFO","msg":"stream: closed","id":"nr6j6s1a"}

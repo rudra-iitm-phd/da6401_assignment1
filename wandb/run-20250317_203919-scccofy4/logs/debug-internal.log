@@ -1,0 +1,17 @@
+{"time":"2025-03-17T20:39:19.116067+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_203919-scccofy4/logs/debug-core.log"}
+{"time":"2025-03-17T20:39:19.226475+05:30","level":"INFO","msg":"created new stream","id":"scccofy4"}
+{"time":"2025-03-17T20:39:19.226522+05:30","level":"INFO","msg":"stream: started","id":"scccofy4"}
+{"time":"2025-03-17T20:39:19.226579+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:19.226598+05:30","level":"INFO","msg":"sender: started","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:19.226684+05:30","level":"INFO","msg":"handler: started","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:19.557955+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T20:39:30.371952+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T20:39:30.372577+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T20:39:31.383798+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-scccofy4-ConfusionMatrixTable","runtime_seconds":4.34813575},{"desc":"uploading artifact run-scccofy4-Confusionmatrix_table","runtime_seconds":2.301050459},{"desc":"uploading artifact run-scccofy4-ConfusionMatrixTable","runtime_seconds":1.913166166},{"desc":"uploading config.yaml","runtime_seconds":0.322258625,"progress":"2.5KB/2.5KB"}],"total_operations":4}}
+{"time":"2025-03-17T20:39:34.090284+05:30","level":"INFO","msg":"stream: closing","id":"scccofy4"}
+{"time":"2025-03-17T20:39:34.090359+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-03-17T20:39:37.965264+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T20:39:38.251589+05:30","level":"INFO","msg":"handler: closed","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:38.251631+05:30","level":"INFO","msg":"sender: closed","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:38.251613+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"scccofy4"}
+{"time":"2025-03-17T20:39:38.252136+05:30","level":"INFO","msg":"stream: closed","id":"scccofy4"}

@@ -1,0 +1,28 @@
+wandb_version: 1
+
+activation:
+  value: identity
+batch_size:
+  value: 2048
+beta1:
+  value: 0.8151353442566964
+beta2:
+  value: 0.9735829801131042
+epochs:
+  value: 800
+hidden_size:
+  value:
+  - 512
+  - 64
+learning_rate:
+  value: 0.0008027867842340319
+loss:
+  value: cross_entropy
+momentum:
+  value: 0.5330789546867687
+optimizer:
+  value: adam
+weight_decay:
+  value: 7.522056699023916e-05
+weight_init:
+  value: xavier

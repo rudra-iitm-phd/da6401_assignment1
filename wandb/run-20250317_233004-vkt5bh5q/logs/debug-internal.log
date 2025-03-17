@@ -1,0 +1,10 @@
+{"time":"2025-03-17T23:30:04.734676+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_233004-vkt5bh5q/logs/debug-core.log"}
+{"time":"2025-03-17T23:30:04.848672+05:30","level":"INFO","msg":"created new stream","id":"vkt5bh5q"}
+{"time":"2025-03-17T23:30:04.848898+05:30","level":"INFO","msg":"stream: started","id":"vkt5bh5q"}
+{"time":"2025-03-17T23:30:04.848914+05:30","level":"INFO","msg":"handler: started","stream_id":"vkt5bh5q"}
+{"time":"2025-03-17T23:30:04.849123+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"vkt5bh5q"}
+{"time":"2025-03-17T23:30:04.84924+05:30","level":"INFO","msg":"sender: started","stream_id":"vkt5bh5q"}
+{"time":"2025-03-17T23:30:05.269065+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T23:30:11.98182+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T23:30:11.985264+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T23:30:12.991564+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-vkt5bh5q-Confusionmatrix_table","runtime_seconds":1.800450375},{"desc":"uploading artifact run-vkt5bh5q-ConfusionMatrixTable","runtime_seconds":1.432449708,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":0.303806333,"progress":"141.0KB/141.0KB"}]}],"total_operations":2}}

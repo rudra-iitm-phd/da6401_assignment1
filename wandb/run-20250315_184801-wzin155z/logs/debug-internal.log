@@ -1,0 +1,13 @@
+{"time":"2025-03-15T18:48:01.631748+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_184801-wzin155z/logs/debug-core.log"}
+{"time":"2025-03-15T18:48:01.750268+05:30","level":"INFO","msg":"created new stream","id":"wzin155z"}
+{"time":"2025-03-15T18:48:01.750322+05:30","level":"INFO","msg":"stream: started","id":"wzin155z"}
+{"time":"2025-03-15T18:48:01.750333+05:30","level":"INFO","msg":"handler: started","stream_id":"wzin155z"}
+{"time":"2025-03-15T18:48:01.750368+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"wzin155z"}
+{"time":"2025-03-15T18:48:01.750435+05:30","level":"INFO","msg":"sender: started","stream_id":"wzin155z"}
+{"time":"2025-03-15T18:48:02.114901+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T19:24:19.211341+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:64601->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:36:20.387905+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:49884->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:39:09.793505+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T19:39:09.794674+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T19:39:09.816565+05:30","level":"INFO","msg":"stream: closing","id":"wzin155z"}
+{"time":"2025-03-15T19:39:11.967577+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

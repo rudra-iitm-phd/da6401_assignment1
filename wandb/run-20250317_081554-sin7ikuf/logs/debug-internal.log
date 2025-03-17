@@ -1,0 +1,16 @@
+{"time":"2025-03-17T08:15:54.844508+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_081554-sin7ikuf/logs/debug-core.log"}
+{"time":"2025-03-17T08:15:54.964729+05:30","level":"INFO","msg":"created new stream","id":"sin7ikuf"}
+{"time":"2025-03-17T08:15:54.964795+05:30","level":"INFO","msg":"stream: started","id":"sin7ikuf"}
+{"time":"2025-03-17T08:15:54.964818+05:30","level":"INFO","msg":"sender: started","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:15:54.964824+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:15:54.964864+05:30","level":"INFO","msg":"handler: started","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:15:55.312656+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T08:18:56.416874+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T08:18:56.417572+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T08:18:57.426988+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sin7ikuf-ConfusionMatrixTable","runtime_seconds":2.907145667,"subtasks":[{"desc":"Confusion Matrix Table.table.json","runtime_seconds":0.878552666,"progress":"141.0KB/141.0KB"}]}],"total_operations":1}}
+{"time":"2025-03-17T08:18:58.646604+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-17T08:18:58.960383+05:30","level":"INFO","msg":"stream: closing","id":"sin7ikuf"}
+{"time":"2025-03-17T08:18:58.960469+05:30","level":"INFO","msg":"handler: closed","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:18:58.960466+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:18:58.960506+05:30","level":"INFO","msg":"sender: closed","stream_id":"sin7ikuf"}
+{"time":"2025-03-17T08:18:58.96064+05:30","level":"INFO","msg":"stream: closed","id":"sin7ikuf"}

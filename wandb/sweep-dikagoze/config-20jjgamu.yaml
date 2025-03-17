@@ -1,0 +1,29 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch_size:
+  value: 1024
+beta1:
+  value: 0.8030788899521424
+beta2:
+  value: 0.9512278427582967
+epochs:
+  value: 800
+hidden_size:
+  value:
+  - 32
+  - 64
+  - 128
+learning_rate:
+  value: 0.037732573601087435
+loss:
+  value: cross_entropy
+momentum:
+  value: 0.9680933855939564
+optimizer:
+  value: nag
+weight_decay:
+  value: 2.425274497572794e-07
+weight_init:
+  value: xavier

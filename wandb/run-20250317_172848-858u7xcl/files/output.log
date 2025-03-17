@@ -1,0 +1,39 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.0      Train accuracy : 35.75      Validation accuracy : 35.44      Test Accuracy : 35.65
+---------------------------------------------------------------------------------------------------------
+Loss : 0.69      Train accuracy : 66.48      Validation accuracy : 65.36      Test Accuracy : 65.25
+---------------------------------------------------------------------------------------------------------
+Loss : 0.53      Train accuracy : 71.87      Validation accuracy : 70.08      Test Accuracy : 69.5
+---------------------------------------------------------------------------------------------------------
+Loss : 0.45      Train accuracy : 74.0      Validation accuracy : 71.76      Test Accuracy : 71.51
+---------------------------------------------------------------------------------------------------------
+Loss : 0.41      Train accuracy : 76.07      Validation accuracy : 73.76      Test Accuracy : 73.32
+---------------------------------------------------------------------------------------------------------
+Loss : 0.36      Train accuracy : 77.58      Validation accuracy : 74.73      Test Accuracy : 74.54
+---------------------------------------------------------------------------------------------------------
+Loss : 0.34      Train accuracy : 79.3      Validation accuracy : 75.86      Test Accuracy : 75.31
+---------------------------------------------------------------------------------------------------------
+Loss : 0.32      Train accuracy : 79.55      Validation accuracy : 76.33      Test Accuracy : 75.88
+---------------------------------------------------------------------------------------------------------
+Loss : 0.3      Train accuracy : 80.67      Validation accuracy : 77.17      Test Accuracy : 76.65
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 51, in learn
+    params, logits = nn.forward(x)
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/neural_network.py", line 76, in forward
+    self.params[block]['a'] = self.params[block]['w'].dot(self.params['hidden0']['x']) + self.params[block]['b']
+KeyboardInterrupt

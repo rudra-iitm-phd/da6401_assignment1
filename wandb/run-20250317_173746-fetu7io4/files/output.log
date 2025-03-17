@@ -1,0 +1,33 @@
+Model Summary
+---------------------------------------
+hidden0
+weights : (784, 784)
+bias : (784, 1)
+activation : relu
+---------------------------------------
+output1
+weights : (10, 784)
+bias : (10, 1)
+activation : softmax
+---------------------------------------
+Total Number of Parameters : 623290
+Loss : 2.05      Train accuracy : 34.7      Validation accuracy : 33.45      Test Accuracy : 32.87
+---------------------------------------------------------------------------------------------------------
+Loss : 0.67      Train accuracy : 66.9      Validation accuracy : 64.56      Test Accuracy : 64.09
+---------------------------------------------------------------------------------------------------------
+Loss : 0.5      Train accuracy : 72.38      Validation accuracy : 69.39      Test Accuracy : 68.92
+---------------------------------------------------------------------------------------------------------
+Loss : 0.45      Train accuracy : 75.37      Validation accuracy : 72.42      Test Accuracy : 72.0
+---------------------------------------------------------------------------------------------------------
+Loss : 0.41      Train accuracy : 76.67      Validation accuracy : 73.87      Test Accuracy : 73.36
+---------------------------------------------------------------------------------------------------------
+Loss : 0.36      Train accuracy : 79.02      Validation accuracy : 75.39      Test Accuracy : 74.68
+---------------------------------------------------------------------------------------------------------
+Loss : 0.33      Train accuracy : 79.82      Validation accuracy : 76.11      Test Accuracy : 75.05
+---------------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "train.py", line 44, in train
+    trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+  File "/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/trainer.py", line 54, in learn
+    updated_params = optim.update(params, grads)
+KeyboardInterrupt

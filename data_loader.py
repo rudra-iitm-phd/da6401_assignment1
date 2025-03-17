@@ -6,7 +6,7 @@ matplotlib.use("Agg")
 
 class FashionMNISTData:
 
-  def __init__(self, frac=1):
+  def __init__(self,frac=1 ):
 
     (self.X_train, self.y_train), (self.X_val, self.y_val), (self.X_test, self.y_test) = self.load_data(frac) #loading the training, validation and test data along with labels
 
@@ -47,13 +47,14 @@ class FashionMNISTData:
     plt.imshow(self.X_train[k], cmap = 'grey')
     plt.title(self.classes[self.y_train[k]])
 
-  def display_collage(self, figsize):
+  def display_collage(self, figsize, wandb):
 
     # helper function to display samples from individual classes
 
     pop_list = list(range(10)) # a number list of integers from 0 --> 9
     fig, ax = plt.subplots(2, 5, figsize = figsize)
     i, j = 0, 0
+    img_list = []
     while len(pop_list) > 0:
       k = np.random.randint(0, len(self.X_train)) # we sample a number from the range of index available
 
@@ -62,12 +63,15 @@ class FashionMNISTData:
         ax[i, j].imshow(self.X_train[k], cmap = 'gray')
         ax[i, j].set_title(f'{self.classes[self.y_train[k]]}')
 
+        img_list.append(wandb.Image(self.X_train[k], caption = f'{self.classes[self.y_train[k]]}'))
+
         pop_list.pop(pop_list.index(self.y_train[k]))
 
         # randomly placing images on the subplot
 
         i = (i+1) % 2  
         j = (j+1) % 5
+    wandb.log({"Sample images from Fashion MNIST":img_list})
 
     return fig
 

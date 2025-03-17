@@ -9,6 +9,7 @@ from score_metrics import Accuracy as accuracy
 from argument_parser import parser
 import sweep_configuration 
 matplotlib.use("Agg") 
+import time
 
 wandb.login(key = "f7cc061a6cf1c6d4f2791a84e81d1d16ee8adc8b")
 
@@ -25,19 +26,24 @@ def create_name(configuration:dict):
 def train():
       with wandb.init(entity = configuration_script['wandb_entity'],project = configuration_script['wandb_project'], name = create_name(configuration_script), config = configuration_script):
 
+            
             sweep_config = wandb.config
+
             configuration_script.update(sweep_config)
 
-            fig = data.display_collage((16, 14))
-            wandb.log({"Sample images from each class":fig})
+            fig = data.display_collage((16, 14), wandb)
+            
+            # wandb.log({"Sample images from each class":fig})
 
-
+            
             nn, optim, loss_fn = configuration.configure(configuration_script)
 
             nn.view_model_summary()
 
             trainer = Trainer(X_train, y_train, X_val, y_val, X_test, y_test, wandb)
             trainer.learn(nn=nn, optim=optim, loss_fn=loss_fn, lr=configuration_script['learning_rate'], batch_size=configuration_script['batch_size'], epochs = configuration_script['epochs'], acc_metrics=accuracy, loss = loss_fn, beta = configuration_script['beta'], forward=nn.forward, beta1 = configuration_script['beta1'], beta2 = configuration_script['beta2'], weight_decay = configuration_script['weight_decay'], eps = configuration_script['epsilon'])
+
+            
 
             wandb.finish()
 
@@ -61,8 +67,10 @@ if __name__ == "__main__":
                   sweep_id = wandb.sweep(sweep_config, project=configuration_script['wandb_project'], entity=configuration_script['wandb_entity'])
             else:
                   sweep_id = args.sweep_id
-            wandb.agent(sweep_id, function=train, count=5)
-            wandb.config.update({"sweep_name": create_name(wandb.config)})
+            
+            
+            wandb.agent(sweep_id, function=train, count=20)
+            # wandb.config.update({"sweep_name": create_name(wandb.config)})
             wandb.finish()
       else:
             train()

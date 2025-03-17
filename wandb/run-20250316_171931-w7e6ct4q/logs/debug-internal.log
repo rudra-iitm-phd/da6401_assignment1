@@ -1,0 +1,16 @@
+{"time":"2025-03-16T17:19:31.069509+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_171931-w7e6ct4q/logs/debug-core.log"}
+{"time":"2025-03-16T17:19:31.184982+05:30","level":"INFO","msg":"created new stream","id":"w7e6ct4q"}
+{"time":"2025-03-16T17:19:31.185053+05:30","level":"INFO","msg":"stream: started","id":"w7e6ct4q"}
+{"time":"2025-03-16T17:19:31.185046+05:30","level":"INFO","msg":"handler: started","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:19:31.185057+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:19:31.18518+05:30","level":"INFO","msg":"sender: started","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:19:31.517578+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:21:11.526583+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:21:11.527574+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:21:12.536507+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-w7e6ct4q-ConfusionMatrixTable","runtime_seconds":9.341133792},{"desc":"uploading artifact run-w7e6ct4q-Confusionmatrix_table","runtime_seconds":6.396903958},{"desc":"uploading artifact run-w7e6ct4q-ConfusionMatrixTable","runtime_seconds":5.976673333},{"desc":"uploading artifact run-w7e6ct4q-Confusionmatrix_table","runtime_seconds":3.080334917},{"desc":"uploading artifact run-w7e6ct4q-ConfusionMatrixTable","runtime_seconds":2.690524875}],"total_operations":5}}
+{"time":"2025-03-16T17:21:20.291684+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:21:20.621057+05:30","level":"INFO","msg":"stream: closing","id":"w7e6ct4q"}
+{"time":"2025-03-16T17:21:20.621135+05:30","level":"INFO","msg":"handler: closed","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:21:20.621174+05:30","level":"INFO","msg":"sender: closed","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:21:20.621162+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"w7e6ct4q"}
+{"time":"2025-03-16T17:21:20.621369+05:30","level":"INFO","msg":"stream: closed","id":"w7e6ct4q"}

@@ -1,0 +1,12 @@
+{"time":"2025-03-17T17:40:22.935106+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250317_174022-ihe18ppx/logs/debug-core.log"}
+{"time":"2025-03-17T17:40:23.045255+05:30","level":"INFO","msg":"created new stream","id":"ihe18ppx"}
+{"time":"2025-03-17T17:40:23.045305+05:30","level":"INFO","msg":"stream: started","id":"ihe18ppx"}
+{"time":"2025-03-17T17:40:23.045393+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ihe18ppx"}
+{"time":"2025-03-17T17:40:23.04546+05:30","level":"INFO","msg":"sender: started","stream_id":"ihe18ppx"}
+{"time":"2025-03-17T17:40:23.045594+05:30","level":"INFO","msg":"handler: started","stream_id":"ihe18ppx"}
+{"time":"2025-03-17T17:40:23.555515+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-17T17:41:09.042782+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-17T17:41:09.043267+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-17T17:41:10.357424+05:30","level":"INFO","msg":"stream: closing","id":"ihe18ppx"}
+{"time":"2025-03-17T17:41:10.357469+05:30","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2025-03-17T17:41:11.315617+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -1,0 +1,104 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.8.16
+        t:
+            "1":
+                - 2
+                - 3
+                - 55
+            "2":
+                - 2
+                - 3
+                - 55
+            "3":
+                - 2
+                - 13
+                - 14
+                - 16
+                - 23
+                - 55
+            "4": 3.8.16
+            "5": 0.19.8
+            "8":
+                - 2
+                - 5
+            "12": 0.19.8
+            "13": darwin-arm64
+        visualize:
+            Confusion matrix:
+                panel_config:
+                    fieldSettings:
+                        Actual: Actual
+                        Predicted: Predicted
+                        nPredictions: nPredictions
+                    panelDefId: wandb/confusion_matrix/v1
+                    stringSettings:
+                        title: Confusion Matrix Curve
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: Confusion matrix_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+activation:
+    value: tanh
+batch_size:
+    value: 1024
+beta:
+    value: 0.5
+beta1:
+    value: 0.9029201277479544
+beta2:
+    value: 0.9977136018890028
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 300
+epsilon:
+    value: 1e-06
+hidden_size:
+    value:
+        - 784
+input_size:
+    value: 784
+learning_rate:
+    value: 0.0170081830738594
+loss:
+    value: cross_entropy
+momentum:
+    value: 0.965109588016562
+num_layers:
+    value: 3
+optimizer:
+    value: rmsprop
+output_size:
+    value: 10
+sweep_id:
+    value: da24d008-iit-madras/da24d008-assignment1/dikagoze
+wandb_entity:
+    value: da24d008-iit-madras
+wandb_project:
+    value: da24d008-assignment1
+wandb_sweep:
+    value: true
+weight_decay:
+    value: 0.0007554061975527005
+weight_init:
+    value: xavier

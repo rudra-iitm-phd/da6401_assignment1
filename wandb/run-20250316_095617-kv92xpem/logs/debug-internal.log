@@ -1,0 +1,17 @@
+{"time":"2025-03-16T09:56:17.496713+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_095617-kv92xpem/logs/debug-core.log"}
+{"time":"2025-03-16T09:56:17.616955+05:30","level":"INFO","msg":"created new stream","id":"kv92xpem"}
+{"time":"2025-03-16T09:56:17.617004+05:30","level":"INFO","msg":"stream: started","id":"kv92xpem"}
+{"time":"2025-03-16T09:56:17.617067+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"kv92xpem"}
+{"time":"2025-03-16T09:56:17.617071+05:30","level":"INFO","msg":"sender: started","stream_id":"kv92xpem"}
+{"time":"2025-03-16T09:56:17.617166+05:30","level":"INFO","msg":"handler: started","stream_id":"kv92xpem"}
+{"time":"2025-03-16T09:56:17.961214+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T09:57:18.694876+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24d008-iit-madras/da24d008-assignment1/kv92xpem/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-16T10:10:37.464634+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T10:10:37.468271+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T10:10:38.430654+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T10:10:38.475064+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.043954791}],"total_operations":1}}
+{"time":"2025-03-16T10:10:38.742865+05:30","level":"INFO","msg":"stream: closing","id":"kv92xpem"}
+{"time":"2025-03-16T10:10:38.742899+05:30","level":"INFO","msg":"handler: closed","stream_id":"kv92xpem"}
+{"time":"2025-03-16T10:10:38.742915+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"kv92xpem"}
+{"time":"2025-03-16T10:10:38.74318+05:30","level":"INFO","msg":"sender: closed","stream_id":"kv92xpem"}
+{"time":"2025-03-16T10:10:38.74322+05:30","level":"INFO","msg":"stream: closed","id":"kv92xpem"}

@@ -1,0 +1,17 @@
+{"time":"2025-03-15T17:23:15.631916+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250315_172315-3zu1xvgf/logs/debug-core.log"}
+{"time":"2025-03-15T17:23:15.749615+05:30","level":"INFO","msg":"created new stream","id":"3zu1xvgf"}
+{"time":"2025-03-15T17:23:15.749681+05:30","level":"INFO","msg":"stream: started","id":"3zu1xvgf"}
+{"time":"2025-03-15T17:23:15.749719+05:30","level":"INFO","msg":"sender: started","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T17:23:15.749775+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T17:23:15.749717+05:30","level":"INFO","msg":"handler: started","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T17:23:16.199818+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-15T19:24:19.669087+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:62571->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:36:10.804783+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.22.46.123:49885->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-15T19:39:00.200641+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-15T19:39:00.206113+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-15T19:39:00.236347+05:30","level":"INFO","msg":"stream: closing","id":"3zu1xvgf"}
+{"time":"2025-03-15T19:39:02.034465+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-15T19:39:02.334777+05:30","level":"INFO","msg":"handler: closed","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T19:39:02.334761+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T19:39:02.34207+05:30","level":"INFO","msg":"sender: closed","stream_id":"3zu1xvgf"}
+{"time":"2025-03-15T19:39:02.342169+05:30","level":"INFO","msg":"stream: closed","id":"3zu1xvgf"}

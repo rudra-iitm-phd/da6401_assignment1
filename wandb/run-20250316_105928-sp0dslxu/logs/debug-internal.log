@@ -1,0 +1,16 @@
+{"time":"2025-03-16T10:59:28.474299+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/Users/rudra_sarkar/Documents/PhD IIT Madras/Intro to Deep Learning M Khapra DA6401/DA6401 Assignment/da6401_assignment1/wandb/run-20250316_105928-sp0dslxu/logs/debug-core.log"}
+{"time":"2025-03-16T10:59:28.591496+05:30","level":"INFO","msg":"created new stream","id":"sp0dslxu"}
+{"time":"2025-03-16T10:59:28.591532+05:30","level":"INFO","msg":"stream: started","id":"sp0dslxu"}
+{"time":"2025-03-16T10:59:28.591534+05:30","level":"INFO","msg":"handler: started","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T10:59:28.591553+05:30","level":"INFO","msg":"sender: started","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T10:59:28.591614+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T10:59:28.919752+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T11:02:45.816072+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T11:02:45.818343+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T11:02:46.829944+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-sp0dslxu-ConfusionMatrixTable","runtime_seconds":2.975652}],"total_operations":1}}
+{"time":"2025-03-16T11:02:47.155241+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T11:02:47.47864+05:30","level":"INFO","msg":"stream: closing","id":"sp0dslxu"}
+{"time":"2025-03-16T11:02:47.478726+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T11:02:47.478943+05:30","level":"INFO","msg":"handler: closed","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T11:02:47.47894+05:30","level":"INFO","msg":"sender: closed","stream_id":"sp0dslxu"}
+{"time":"2025-03-16T11:02:47.478984+05:30","level":"INFO","msg":"stream: closed","id":"sp0dslxu"}
