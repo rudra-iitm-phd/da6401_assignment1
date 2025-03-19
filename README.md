@@ -57,7 +57,7 @@ python train.py
 To customize parameters like hidden layers, activation functions, etc., run with the arguemnts with the respective values provided by a space
 for eg :
 ```bash
-python train.py -b 1024 -o adam -w_d 1e-2 -e 500 -beta1 0.9 -beta2 0.9999  -w_i xavier -lr 1e-2 -d mnist -a tanh
+python train.py -b 1024 -o adam -w_d 1e-2 -e 500 -beta1 0.9 -beta2 0.9999  -w_i xavier -lr 1e-2 -a tanh
 ```
 Following is a screen shot provided post running this command
 
